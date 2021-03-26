@@ -1,0 +1,33 @@
+@mixin arrowLeft {
+  border-right: 20px solid;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  top: 40%;
+}
+
+
+@mixin arrowRight {
+  border-left: 20px solid;
+  z-index: 10;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  top: 40%;
+}
+
+
+@mixin titleProductShowCase {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
