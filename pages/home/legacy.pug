@@ -1,0 +1,29 @@
+.box
+    .legacy__title
+        .main
+            .legacy__title__new Sản phẩm mới
+            .legacy__title__hot Sản phẩm bán chạy
+            .legacy__title__special Sản phẩm đặc biệt
+        .legacy__title__decoration
+            img(src='./assets/images/footer-decor.jpg' alt="text footer decoration")
+        .legacy__title__menu
+            .menu
+                ul
+                    each val in ['Mỹ phẩm', '.', 'Chăm sóc da', 'Nước hoa','.', 'Trang sức', '.', 'Quà tặng']
+                        li= val
+include mixin_home
+.legacy__items
+    figure
+        +legacy('Emu Oil', 'legacy-detail1', './assets/images/product1.jpg')
+        +legacy('Marc Jacobs', 'legacy-detail2', './assets/images/product2.jpg')
+        +legacy('Savon Stories', 'legacy-detail3', './assets/images/product3.jpg')
+        +legacy('Home', 'legacy-detail4', './assets/images/product4.jpg')
+        +legacy('OHUI', 'legacy-detail5', './assets/images/product5.jpg')
+        +legacy('DEBORAH LIPPMANN', 'legacy-detail6', './assets/images/product6.jpg')
+        +legacy('HOME', 'legacy-detail7', './assets/images/product7.jpg')
+        +legacy('DEBORA', 'legacy-detail8', './assets/images/product8.jpg')
+
+
+        
+
+

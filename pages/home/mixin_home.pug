@@ -1,0 +1,17 @@
+mixin legacy(legacyTitle,className,imageSource)
+    .legacy__items__detail(class=className)
+        img(src=imageSource, alt=legacyTitle)
+        .legacy__items__detail__content.legacy-content
+            h4= legacyTitle
+            a(href='')
+                p Mỹ phẩm Châu Âu
+            span.price
+                | 335.000
+                small vnd
+        .legacy__items__detail__icon
+            .legacy-cta
+                button Mua hàng
+                a(href='')
+                    i.fas.fa-heart
+                a(href='')
+                    i.fas.fa-sync-alt

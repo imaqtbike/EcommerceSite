@@ -11,3 +11,69 @@ body {
   font-family: "Curlz MT";
   src: url(./assets/fonts/CurlzMT.ttf);
 }
+
+@font-face {
+  font-family: "UTMAndrogyne";
+  src: url(./assets/fonts/UTMAndrogyne.ttf);
+}
+
+.legacy__title {
+  margin: 0 auto;
+  padding: 7rem 0;
+  width: 60%;
+
+  .main {
+    display: flex;
+    font-family: UTMAndrogyne, serif;
+    align-items: center;
+    color: #c2c2c2;
+
+    .legacy__title__special {
+      flex: 1;
+      padding-left: 2rem;
+      font-size: 1.8rem;
+    }
+
+    .legacy__title__hot {
+      flex: 2;
+      padding: 0 2rem;
+      border-left: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
+      font-size: 33.93px;
+      color: #789629;
+    }
+
+    .legacy__title__new {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+      padding-right: 2rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  .legacy__title__decoration {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .legacy__title__menu {
+    margin-top: 3rem;
+
+    .menu ul {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+
+      li a {
+        font-size: 1.4rem;
+        color: #e6e6e6;
+        list-style: none;
+        text-decoration: none;
+        pointer-events: none;
+      }
+    }
+  }
+}
