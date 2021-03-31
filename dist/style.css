@@ -535,6 +535,148 @@ body {
   transition: all 0.3s ease;
   cursor: pointer; }
 
+.section__socials {
+  margin: 4rem 0; }
+  .section__socials .mandala__socials {
+    margin: 0 auto;
+    display: flex;
+    width: 118rem;
+    justify-content: space-between; }
+    .section__socials .mandala__socials .item {
+      display: flex;
+      color: #e8e8e8;
+      cursor: pointer; }
+      .section__socials .mandala__socials .item .bar {
+        width: 0.1rem;
+        height: 3rem;
+        transform: rotate(45deg);
+        background: #e8e8e8;
+        margin: 0 4rem; }
+      .section__socials .mandala__socials .item p {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        font-weight: 600;
+        font-size: 1.4rem; }
+    .section__socials .mandala__socials .icon {
+      width: 3rem;
+      height: 3rem;
+      border: 0.2rem solid #e8e8e8;
+      border-radius: 50%;
+      display: flex;
+      align-items: center; }
+      .section__socials .mandala__socials .icon .fab {
+        margin: 0 auto;
+        font-size: 1.6rem; }
+
+.section__info {
+  width: 118rem;
+  display: flex;
+  margin: 5rem auto; }
+  .section__info .about_us {
+    flex: 1;
+    margin-right: 2rem; }
+    .section__info .about_us .logo {
+      margin: 3rem 0; }
+    .section__info .about_us h5 {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 1.4rem; }
+    .section__info .about_us p {
+      font-size: 1.2rem; }
+    .section__info .about_us .view__more__btn {
+      margin-top: 2rem; }
+      .section__info .about_us .view__more__btn a {
+        text-decoration: none;
+        color: #bababa;
+        font-size: 1.2rem;
+        font-weight: 400; }
+
+.section__info .heading__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1rem; }
+
+.section__info h4 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem; }
+
+.section__info .blog {
+  flex: 1;
+  margin-right: 2rem; }
+  .section__info .blog .content .content__img {
+    margin: 3rem 0; }
+  .section__info .blog .content h5 {
+    padding-bottom: 1rem;
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem solid #bababa;
+    font-size: 1.6rem;
+    font-weight: bold; }
+  .section__info .blog .content p {
+    font-size: 1.2rem; }
+  .section__info .blog .content span {
+    color: #bababa;
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-top: 2rem; }
+  .section__info .blog .content .view__more__btn {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 0.1rem solid #bababa;
+    display: flex;
+    justify-content: space-between; }
+    .section__info .blog .content .view__more__btn a {
+      text-decoration: none;
+      color: #bababa;
+      font-size: 1.2rem;
+      font-weight: 400; }
+      .section__info .blog .content .view__more__btn a i {
+        margin-left: 0.5rem; }
+
+.section__info .contact {
+  flex: 1;
+  text-align: center; }
+  .section__info .contact .contact__email input {
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 2rem;
+    margin-top: 3rem; }
+  .section__info .contact .contact__email p {
+    font-size: 1.2rem;
+    margin: 0.8rem 0; }
+  .section__info .contact .contact__email button {
+    color: #fff;
+    background: #000;
+    font-size: 1.2rem;
+    padding: 0.5rem 3rem;
+    margin: 1rem 0;
+    outline: none;
+    border: none;
+    cursor: pointer; }
+  .section__info .contact .content .product__tag {
+    text-align: left;
+    margin-top: 3rem; }
+    .section__info .contact .content .product__tag button {
+      font-size: 1.2rem;
+      padding: 0.5rem 3rem;
+      margin: 1rem 0;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #e6e6e6;
+      margin: 0 0.5rem 0.5rem 0;
+      background-color: #fff; }
+      .section__info .contact .content .product__tag button:hover {
+        background: #789629;
+        color: #fff; }
+
 header {
   width: 100%;
   height: 75px;

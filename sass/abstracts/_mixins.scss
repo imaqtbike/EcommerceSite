@@ -31,3 +31,19 @@
   text-transform: uppercase;
   font-size: 3rem;
 }
+
+@mixin infoLinkStyling {
+  text-decoration: none;
+  color: $color-very-light-gray;
+  font-size: $font-size-sm;
+  font-weight: 400
+}
+
+@mixin infoButtonStyling {
+  font-size: $font-size-sm;
+  padding: 0.5rem 3rem;
+  margin: 1rem 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

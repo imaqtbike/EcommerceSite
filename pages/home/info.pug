@@ -1,0 +1,39 @@
+.about_us
+    +info('VỀ CHÚNG TÔI')
+    .content
+        .logo
+            .nav__logo
+                .nav__logo--square.logo-square
+                    a(href='index.html')
+                        img.logo-img(src='./assets/images/logo.png' alt='logo company')
+        h5 GIỚI THIỆU CHUNG VỀ MỸ PHẨM HANDMADE MANDALA
+        p Hi, chào các nàng...sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tính xô nhau đi tắm Free để giải nhiệt.Hi, chào các nàng...sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tính xô nhau đi tắm Free để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tính xô nhau đi tắm Free để giải nhiệt. 
+        .view__more__btn
+            a(href='#') Xem thêm
+
+.blog
+    +info('BLOG')
+    .content
+        .content__img
+            img(src='./assets/images/img12.jpg' alt='blog image')
+        a
+            h5 REVIEW SON KEM BOURJOIR VELVET
+        p   Hi, chào các nàng...sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tính xô nhau đi tắm Free để giải nhiệt. 
+        span Bởi NamTran (27/05/2015)
+        .view__more__btn
+            a(href='#') Đọc thêm
+                i.fas.fa-angle-right
+            a 23 bình luận
+
+.contact
+    .contact__email
+        +info('GỬI EMAIL CHO CHÚNG TÔI')
+        input(type='text' placeholder='Email của bạn')
+        p Gửi email để nhận những ưu đãi mới nhất
+        button(type='button') Gửi
+    .content
+        h4 TAG SẢN PHẨM
+        img(src='./assets/images/footer-decor.jpg', alt='text footer decoration')
+        .product__tag
+            each val in ['Đồng hồ', 'Túi', 'Phụ kiện','Đồng hồ','Túi', 'Giày', 'Sandals', 'Áo sơ mi', 'Nước hoa', 'Trẻ em', 'Thời trang nữ','Trẻ em', 'Thời trang nữ']
+                button(type='button')= val
