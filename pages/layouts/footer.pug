@@ -1,0 +1,50 @@
+.box
+    .footer__content
+        .content__contact
+            h3 LIÊN HỆ VỚI CHÚNG TÔI
+            .content__contact__address
+                i.fas.fa-map-marker-alt
+                p Tầng 4,Tòa nhà Hanoi Group số 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội
+            .content__contact__phone
+                .content__contact__phone__item1
+                    i.fas.fa-phone-alt
+                    p (04) 6674 2332 
+                .content__contact__phone__item2
+                    i.fas.fa-phone-alt
+                    p (04) 3786 8904
+            .content__contact__mail
+                .content__contact__mail__item1
+                    i.fas.fa-phone-alt
+                    p (08) 6680 9686
+                .content__contact__mail__item2
+                    i.fas.fa-envelope
+                    p Support@bizweb.vn
+        .content__shipping
+            h3 CHUYỂN HÀNG
+            ul
+                each val in ['Mua sắm trực tuyến', 'Từ chúng tôi gửi đến', 'Chính sách vận chuyển', 'Vận chuyển thông tin']
+                    li
+                        a(href='#')=val
+        .content__support
+            h3 HỖ TRỢ
+            ul
+                each val in ['Câu chuyện của chúng tôi', 'Thanh toán an toàn', 'Tùy chọn vận chuyển','Chính sách vận chuyển']
+                    li
+                        a(href='#')=val
+        .content__info
+            h3 THÔNG TIN
+            ul
+                each val in ['Về chúng tôi', 'Điều khoản & điều kiện', 'Chính sách riêng tư', 'Đặt và trả hàng']
+                    li
+                        a(href='#')=val
+        .content__acc
+            h3 MY ACCOUNT
+            ul
+                each val in ['Xem giỏ hàng', 'Sản phẩm yêu thích', 'Kiểm tra', 'Theo dõi đơn hàng']
+                    li
+                        a(href='#')=val
+.footer__border
+.box
+    .copyright
+        p &copy; Copyright 2008-2014 DKT Technology JSC
+        img(src='./assets/images/payment.png')

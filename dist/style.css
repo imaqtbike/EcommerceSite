@@ -53,7 +53,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 1.6rem; }
 
 .box {
   display: flex;
@@ -719,6 +720,86 @@ header {
   cursor: pointer;
   font-size: 1.4rem;
   margin-top: 1rem; }
+
+footer {
+  background-color: #050505; }
+  footer .box {
+    display: flex;
+    width: 118rem;
+    margin: 0 auto; }
+    footer .box .footer__content {
+      margin: 5rem 0 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      footer .box .footer__content h3 {
+        font-size: 1.8rem;
+        color: #b7b7b7;
+        font-weight: 500; }
+      footer .box .footer__content ul {
+        margin: 2rem 0; }
+        footer .box .footer__content ul li {
+          margin: 1rem 0; }
+        footer .box .footer__content ul li a {
+          color: rgba(134, 134, 134, 0.490196);
+          font-size: 1.4rem;
+          font-weight: 400;
+          text-decoration: none;
+          cursor: pointer; }
+
+.content__contact {
+  flex: 2;
+  margin-right: 3rem;
+  padding-right: 5rem; }
+  .content__contact i {
+    color: #789629;
+    margin-right: 1rem; }
+  .content__contact p {
+    color: rgba(134, 134, 134, 0.490196);
+    font-size: 14px; }
+  .content__contact__address {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem; }
+  .content__contact__phone, .content__contact__mail {
+    display: flex;
+    margin: 1rem 0; }
+  .content__contact__phone {
+    display: flex;
+    margin: 1rem 0; }
+    .content__contact__phone__item1, .content__contact__phone__item2 {
+      display: flex; }
+    .content__contact__phone__item1 p {
+      margin-right: 2.2rem; }
+  .content__contact__mail {
+    display: flex;
+    margin: 1rem 0; }
+    .content__contact__mail__item1, .content__contact__mail__item2 {
+      display: flex; }
+    .content__contact__mail__item1 p {
+      margin-right: 2rem; }
+    .content__contact__mail__item2 p {
+      cursor: pointer;
+      color: #789629;
+      font-style: italic; }
+
+.content__shipping, .content__support, .content__info {
+  flex: 1; }
+
+.footer__border {
+  width: 100%;
+  height: 1px;
+  background-color: #86868636; }
+
+footer .copyright {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0; }
+  footer .copyright p {
+    color: rgba(134, 134, 134, 0.490196);
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif; }
 
 .nav {
   width: 118rem;
