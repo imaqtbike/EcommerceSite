@@ -41,9 +41,30 @@
 
 @mixin infoButtonStyling {
   font-size: $font-size-sm;
-  padding: 0.5rem 3rem;
-  margin: 1rem 0;
+  border: 1px solid #e6e6e6;
+  padding: 0.5rem 1rem;
+  font-size: $font-size-sm;
+  margin: 0 0.5rem 1rem 0;
   outline: none;
-  border: none;
+  cursor: pointer;
+}
+
+@mixin listHeading {
+  font-weight: bold;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+}
+
+@mixin borderBottomDotted {
+  border-bottom: 0.2rem dotted #e8e8e8;
+}
+
+@mixin ctaButton {
+  font-weight: 700;
+  border: #e6e6e6 1px solid;
+  outline: none;
+  border-radius: 1.2rem;
+  margin-right: 0.4rem;
+  transition: all 0.3s ease;
   cursor: pointer;
 }

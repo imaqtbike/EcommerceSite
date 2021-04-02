@@ -1,0 +1,236 @@
+.path .path__content {
+  width: 100%;
+  margin-top: 7.5rem;
+  ul {
+    display: flex;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    li a {
+      text-decoration: none;
+      cursor: pointer;
+      color: $color-black;
+      list-style: none;
+    }
+    li:nth-child(2) a {
+      color: $color-dark-green;
+    }
+  }
+}
+
+.advertisement {
+  height: 17rem;
+  background-image: url("./assets/images/bg-discount.jpg");
+  background-size: cover;
+  background-position: center;
+  .box {
+    display: flex;
+    width: 118rem;
+    margin: 0 auto;
+    .content {
+      width: 100%;
+      height: 16.9rem;
+      display: flex;
+      align-items: center;
+      h1 {
+        font-family: "Lobster",cursive;
+        color: $color-white;
+        font-size: 7.4rem;
+        font-weight: 500;
+      }
+      .content__time {
+        margin-left: 2rem;
+        font-family: "Roboto",sans-serif;
+        color: $color-white;
+        h4 {
+          font-size: 2.4rem;
+          font-weight: 100;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 2.7rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+section .product__list {
+  margin: 5rem 0 8rem;
+  display: flex;
+  aside {
+    width: 25%;
+    .categories {
+      margin-right: 1.5rem;
+      }
+    }
+  }
+
+.categories {
+  .title{
+    display: flex;
+    align-items: center;
+    i {
+      margin-right: 1rem;
+    }
+    h1 {
+    @include listHeading
+    }
+  }
+  .border-solid {
+    border-bottom: .15rem solid $color-light-gray;
+    padding-bottom: 0.5rem;
+  }
+  .border-dotted {
+    @include borderBottomDotted;
+    padding-bottom: 1rem;
+  }
+  .cosmetics , .jewelry__title, .accessories, .perfume {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    h2 {
+      font-weight: 600;
+    }
+  }
+}
+
+.jewelry {
+  ul li {
+    list-style: square;
+    font-size: 1.5rem;
+    margin: 2rem 0 2rem 3rem;
+  }
+}
+
+
+.categories__comparison, .categories__tag {
+  margin-top: 4rem;
+  h1 {
+    @include listHeading
+  }
+}
+
+.categories__comparison p {
+  margin-top: 2rem;
+  font-size: $font-size-sm;
+}
+
+.categories__tag__btn {
+  margin-top: 2rem;
+  button[type='button'] {
+    background-color: $color-white;
+    @include infoButtonStyling;
+  }
+}
+
+.categories__img {
+  margin-top: 4rem;
+}
+
+///===================Article=================///
+
+article {
+  width: 75%;
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    @include borderBottomDotted;
+    padding-bottom: 0.5rem;
+    &__list {
+      display: flex;
+      height: 1.9rem;
+      &__horizontal i {
+        margin-right: 1rem;
+      }
+    }
+      &__number {
+        .fa-caret-left {
+          margin-right: 0.5rem;
+        }
+        .fa-caret-right {
+          margin-left: 0.5rem;
+        }
+        span {
+          margin: 0 0.5rem;
+          font-family: "Roboto",sans-serif;
+          cursor: pointer;
+        }
+        span:nth-last-child(-n+3) {
+          color: $color-very-light-gray
+        }
+      }
+  }
+  .list__content__product {
+    margin: 4rem 0;
+    .list__item {
+      display: flex;
+      height: 30rem;
+      margin-top: 3rem;
+    }
+    .list__content__item__info {
+      margin-left: 3rem;
+      &--heart {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2rem;
+        i {
+          margin-right: 0.3rem;
+        }
+        p {
+          margin-left: 1rem;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $color-black;
+      }
+      h4 {
+        font-family: "Open Sans",sans-serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+      .list__content__item__text {
+        margin-bottom: 2rem;
+        p {
+          font-size: $font-size-sm;
+          text-align: left;
+          line-height: 1.6;
+        }
+      }
+      .detail-price {
+        font-family: 'Lobster', cursive;
+        color: $color-black;
+        font-size: 2.9rem;
+        margin-right: 0.5rem;
+      }
+      .list__content__item__icon{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+        .item-cta {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding: 2rem 0;
+          button, a {
+            @include ctaButton;
+            padding: 1rem 2rem;
+            font-size: 1.4rem;
+            background-color: $color-white;
+          }
+          a {
+            padding: 1rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+article .list__item:not(:last-child) img {
+  @include borderBottomDotted
+}
+

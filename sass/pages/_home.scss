@@ -484,15 +484,10 @@
   opacity: 1;
 }
 .legacy-cta button, .legacy-cta a {
-  font-size: 12px;
-  font-weight: 700;
-  padding: 5px 8px;
-  border: #e6e6e6 1px solid;
-  outline: none;
-  border-radius: 12px;
+  @include ctaButton;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
   margin-right: 4px;
-  transition: all 0.3s ease;
-  cursor: pointer;
 }
 ///////////////////////////////////////////
 

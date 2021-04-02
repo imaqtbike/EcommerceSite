@@ -1,0 +1,72 @@
+doctype html
+head
+    include abstracts/meta
+body.container
+    include components/navigation
+section.path
+    .box
+        .path__content
+            ul
+                li
+                    a(href='#') Home
+                    i.fas.fa-angle-right
+                li
+                    a(href='#') Trang sức
+                    i.fas.fa-angle-right.disable
+section.advertisement
+    .box
+        .content
+            h1 Giảm giá 50%
+            .content__time
+                h4 trong vòng 3 ngày
+                p ( 25/5 - 28/5/2015 )
+include ./list/mixin_list.pug
+section
+    .box
+        .product__list
+            aside
+                .categories
+                    .categories__content
+                        .title.border-solid
+                            i.fas.fa-bars
+                            h1 DANH MỤC SẢN PHẨM
+                        .cosmetics.border-dotted
+                            h2
+                                | MỸ PHẨM
+                            i.fas.fa-caret-right
+                        .jewelry.border-dotted
+                            .jewelry__title
+                                h2
+                                    | TRANG SỨC
+                                i.fas.fa-caret-down
+                            ul
+                                each val in ['Vòng tay', 'Nhẫn', 'Lắc chân', 'Phụ kiện khác','Giày lười - Giày mọi']
+                                    li= val
+                        .accessories.border-dotted
+                            h2
+                                | PHỤ KIỆN
+                            i.fas.fa-caret-right
+                        .perfume.border-dotted
+                            h2
+                                | NƯỚC HOA
+                            i.fas.fa-caret-right
+                    .categories__comparison
+                        h1.title.border-solid so sánh sản phẩm
+                        p   Bạn chưa có sản phẩm nào để so sánh
+                    .categories__tag
+                        h1.title.border-solid tag sản phẩm
+                        .categories__tag__btn
+                            each val in ['Hoa tai', 'Son', 'Nước hoa', 'Giày', 'Sandal','Áo sơ mi', 'Nước hoa','Trẻ em', 'Thời trang nữ']
+                                button(type='button')=val
+                        .categories__img
+                            img(src='./assets/images/mandala-store.jpg')
+            article
+                .list__content
+                    +listPagination
+                    .list__content__product
+                        +listProduct
+                        +listProduct
+                        +listProduct
+                    +listPagination
+footer.footer
+    include layouts/footer

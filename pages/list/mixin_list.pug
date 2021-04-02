@@ -1,0 +1,39 @@
+mixin listProduct
+    .list__item
+        img(src='./assets/images/product6.jpg')
+        .list__content__item__info
+            a(href='detail.html')
+                h4 Mỹ phẩm châu Âu thương hiệu hàng đầu thế giới
+            .list__content__item__info--heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                p ( 4 Lượt mua )
+            .list__content__item__text
+                p Tự hào được ghi là năm mà Tyffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà.
+            .detail-price
+                span 335.000&dstrok;
+            .list__content__item__icon
+                .item-cta
+                    button MUA HÀNG
+                    a(href='#')
+                        i.fas.fa-heart
+                    a(href='#')
+                        i.fas.fa-sync-alt
+
+mixin listPagination
+    .list__content__pagination
+        .pagination
+            .pagination__list
+                .pagination__list__horizontal
+                    i.fas.fa-th-large
+                .pagination__list__vertical
+                    i.fas.fa-list
+            .pagination__number
+                i.fas.fa-caret-left
+                span.active 1
+                span 2
+                span 3
+                i.fas.fa-caret-right
