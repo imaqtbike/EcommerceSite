@@ -11,8 +11,12 @@
       color: $color-black;
       list-style: none;
     }
-    li:nth-child(2) a {
+    li:nth-child(2) a, i {
       color: $color-dark-green;
+    }
+    i {
+      margin-left: 0.5rem;
+      margin-right: 1rem;
     }
   }
 }

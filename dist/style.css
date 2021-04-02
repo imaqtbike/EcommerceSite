@@ -860,8 +860,11 @@ footer .copyright {
       cursor: pointer;
       color: #000;
       list-style: none; }
-    .path .path__content ul li:nth-child(2) a {
+    .path .path__content ul li:nth-child(2) a, .path .path__content ul i {
       color: #789629; }
+    .path .path__content ul i {
+      margin-left: 0.5rem;
+      margin-right: 1rem; }
 
 .advertisement {
   height: 17rem;
