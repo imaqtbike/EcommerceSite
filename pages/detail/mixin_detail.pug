@@ -2,8 +2,12 @@ mixin itemInfomationLeft(source)
     .content__item__info
         .content__item__text.text--left
             h5 the mark of a legend
+            .title--border
             .item-text
-                p Tự hào được ghi là năm mà Tyffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà.
+                p Tự hào được ghi là năm mà Tyffany & Co là <br/>
+                | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với <br/>
+                | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp <br/>
+                | đường cong và đường nét mượt mà.
         .content__item__img.img-right
             img(src=source)
 
@@ -11,8 +15,24 @@ mixin itemInfomationRight(source)
     .content__item__info
         .content__item__text.text--right
             h5 the mark of a legend
+            .title--border.right
             .item-text
                 p Tự hào được ghi là năm mà Tyffany & Co là thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà.
         .content__item__img.img-left
             img(src=source)
 
+
+mixin itemSale
+    .product__des__item
+        img(src='./assets/images/ring-aside.jpg')
+        .product__des__item__content
+            p Mỹ phẩm châu Âu
+            .product__des--heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                i.fas.fa-heart
+                p ( 4 lượt mua )
+            .detail-price
+                span 335.000đ

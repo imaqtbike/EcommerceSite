@@ -4,7 +4,7 @@ head
     include abstracts/meta
 body.container
     include components/navigation
-section.path
+section.section__detail--path
     .box
         .path__content
             ul
@@ -20,31 +20,68 @@ section.path
                 li
                     a(href='#') Lắc tay
                     i.fas.fa-angle-right.disable
-section
+section.product__detail
     .box
         .detail
             .product__img--sides
                 i.fas.fa-arrow-up
                 .detail__img
+                    img(src='./assets/images/ringtcodetail1.jpg')
+                    img(src='./assets/images/ringtcodetail3.jpg')
+                    img(src='./assets/images/ringtcodetail2.jpg')
+                    img(src='./assets/images/ringtcdoside5.jpg')
                 i.fas.fa-arrow-down
             .product__img--main
                 img(src='./assets/images/ringtco.jpg')
             .product__info
                 .product__info--content
                     h2 Lắc tay tiffany xu hướng mới nhất
-                    p tiffany ms 3201
-                    p.price 995.000vnd
-                        |  990.000vnd
+                    p.subtitle tiffany ms 3201
+                    span.price 995.000vnd
+                    span.price-old 990.000vnd
                     p.description Không thể phủ nhận, thời trang và phong cách chính là “tuyên ngôn” không lời mạnh mẽ nhất của mỗi người phụ nữ. Do đó, việc mua sắm thời trang trở thành niềm vui, và có khi là nguồn cảm hứng vô tận để phái đẹp sống vui, sống đẹp hơn trong mắt nửa còn lại của thế giới. Để F5 tủ đồ của mình trước những xu hướng ngày một đa dạng hơn trong thế giới thời trang, nhiều chị em không ngần ngại chi tiêu “mạnh tay” để sở hữu những món đồ yêu thích.
                 .product__info--form
                     .color-selection
                         p Màu sắc
-                        input(type='text' placeholder='Màu bạc')
+                        input(type='text' placeholder='Màu Bạc')
+                    .size-selection
+                        p Size
+                        input(type='text' placeholder='12')
+                        p Số lượng
+                    .quantity
+                        button.quantity-cta Mua hàng
+                        a(href='').quantity-cta
+                            i.fas.fa-heart
+                        a(href='').quantity-cta
+                            i.fas.fa-sync-alt
                 .product__info--social
                     p
                         | Shipping &
-                        span Returns
+                        span  Returns
                     .detail__info__social__content
                         img(src='./assets/images/socials.jpg')
+section.product__description
+    .box
+        article
+            .product__des--title
+                each val in ['đặc điểm nổi bật', 'thông tin sản phẩm', 'đánh giá']
+                    a(href='#')=val
+            .product__des--content
+                +itemInfomationLeft('./assets/images/ring-feature1.jpg')
+                +itemInfomationRight('./assets/images/ring-feature2.jpg')
+                +itemInfomationLeft('./assets/images/ring-feature3.jpg')
+                +itemInfomationRight('./assets/images/ring-feature14.jpg')
+        aside
+            .product__des--sale
+                h3 sản phẩm bán chay
+                +itemSale
+                +itemSale
+                +itemSale
+            .product__des--sale
+                h3 sản phẩm mua nhiều
+                +itemSale
+                +itemSale
+                +itemSale
+                +itemSale   
 footer.footer
     include layouts/footer

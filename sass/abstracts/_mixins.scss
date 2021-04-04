@@ -59,6 +59,10 @@
   border-bottom: 0.2rem dotted #e8e8e8;
 }
 
+@mixin borderBottomSolid {
+  border-bottom: 1.5px solid #dedddd80;
+}
+
 @mixin ctaButton {
   font-weight: 700;
   border: #e6e6e6 1px solid;
