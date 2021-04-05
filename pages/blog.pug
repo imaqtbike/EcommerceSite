@@ -1,0 +1,36 @@
+doctype html
+include ./list/mixin_list.pug
+include ./blog/mixin_blog.pug
+head
+    include abstracts/meta
+body.container
+    include components/navigation
+section.path
+    .box
+        .path__content
+            ul
+                li
+                    a(href='#') Home
+                    i.fas.fa-angle-right
+                li
+                    a(href='#') Blog
+section
+    .box
+        .blog
+            .blog__title
+                h1 BLOG
+            .blog__content
+                +listPagination
+                .posts
+                    +postItem('./assets/images/blog-img7.jpg','first-column')
+                    +postItem('./assets/images/blog-img2.jpg','mid-column')
+                    +postItem('./assets/images/blog-img9.jpg','third-column')
+                    +postItem('./assets/images/blog-img4.jpg','first-column')
+                    +postItem('./assets/images/blog-img3.jpg','mid-column')
+                    +postItem('./assets/images/blog-img6.jpg','third-column')
+                    +postItem('./assets/images/blog-img8.jpg','first-column')
+                    +postItem('./assets/images/blog-img5.jpg','mid-column')
+                    +postItem('./assets/images/blog-img1.jpg','third-column')
+                +listPagination
+footer.footer
+    include layouts/footer

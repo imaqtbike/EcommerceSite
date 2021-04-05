@@ -825,6 +825,9 @@ footer .copyright {
       margin: 2rem 2rem;
       font-size: 1.6rem;
       font-weight: 700; }
+      .nav__menu ul li a {
+        text-decoration: none;
+        color: #000; }
   .nav__logo {
     flex: 1; }
   .nav-button {
@@ -1245,3 +1248,82 @@ article .list__item:not(:last-child) img {
       font-family: "Lobster",cursive;
       color: #000;
       margin-right: 0.5rem; }
+
+.blog {
+  width: 100%; }
+  .blog .blog__title h1 {
+    font-size: 2.8rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 2rem 0; }
+  .blog .list__content__pagination .pagination {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.2rem dotted #e8e8e8;
+    padding-bottom: 0.5rem; }
+    .blog .list__content__pagination .pagination__list {
+      display: flex;
+      height: 1.9rem; }
+      .blog .list__content__pagination .pagination__list__horizontal i {
+        margin-right: 1rem; }
+    .blog .list__content__pagination .pagination__number .fa-caret-left {
+      margin-right: 0.5rem; }
+    .blog .list__content__pagination .pagination__number .fa-caret-right {
+      margin-left: 0.5rem; }
+    .blog .list__content__pagination .pagination__number span {
+      margin: 0 0.5rem;
+      font-family: "Roboto",sans-serif;
+      cursor: pointer; }
+    .blog .list__content__pagination .pagination__number span:nth-last-child(-n+3) {
+      color: #bababa; }
+
+.box .path__content {
+  border-bottom: 1.5px solid #dedddd80; }
+
+.blog__content {
+  margin-bottom: 4rem; }
+  .blog__content .posts {
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; }
+    .blog__content .posts .post__item {
+      margin-top: 3rem; }
+      .blog__content .posts .post__item img {
+        width: 100%; }
+      .blog__content .posts .post__item a {
+        color: #000;
+        text-decoration: none; }
+        .blog__content .posts .post__item a h5 {
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+          margin-top: 0.5rem;
+          border-bottom: 1.5px solid #dedddd80;
+          font-weight: 600; }
+      .blog__content .posts .post__item p {
+        font-size: 1.2rem;
+        padding-right: 1rem;
+        margin-bottom: 0.6rem; }
+      .blog__content .posts .post__item span {
+        color: #b5b5b5;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-style: italic; }
+      .blog__content .posts .post__item .posts__item__btn {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1.5px solid #dedddd80;
+        margin-top: 1rem;
+        padding-top: 1rem; }
+        .blog__content .posts .post__item .posts__item__btn a {
+          text-decoration: none;
+          color: #b5b5b5;
+          font-size: 1.2rem;
+          font-weight: 400; }
+  .blog__content .first-column {
+    padding-right: 2rem; }
+  .blog__content .mid-column {
+    padding: 0 1rem; }
+  .blog__content .third-column {
+    padding-left: 2rem; }
