@@ -14,16 +14,15 @@
 include mixin_home
 .legacy__items
     figure
-        +legacy('Emu Oil', 'legacy-detail1', './assets/images/product1.jpg')
-        +legacy('Marc Jacobs', 'legacy-detail2', './assets/images/product2.jpg')
-        +legacy('Savon Stories', 'legacy-detail3', './assets/images/product3.jpg')
-        +legacy('Home', 'legacy-detail4', './assets/images/product4.jpg')
-        +legacy('OHUI', 'legacy-detail5', './assets/images/product5.jpg')
-        +legacy('DEBORAH LIPPMANN', 'legacy-detail6', './assets/images/product6.jpg')
-        +legacy('HOME', 'legacy-detail7', './assets/images/product7.jpg')
-        +legacy('DEBORA', 'legacy-detail8', './assets/images/product8.jpg')
+        - let title = ['Emu Oil', 'Marc Jacobs', 'Savon Stories','Home','OHUI', 'DEBORAH LIPPMANN','HOME', 'DEBORA']
+        - let classNames =['legacy-detail1','legacy-detail2','legacy-detail3', 'legacy-detail4','legacy-detail5','legacy-detail6','legacy-detail7','legacy-detail8']
+        - let imgSource =['./assets/images/product1.jpg','./assets/images/product2.jpg','./assets/images/product3.jpg','./assets/images/product4.jpg','./assets/images/product5.jpg','./assets/images/product6.jpg','./assets/images/product7.jpg','./assets/images/product8.jpg']
+        -for (let i = 0; i < title.length; i++)
+        -for (let i = 0; i < classNames.length; i++)
+        -for (let i = 0; i < imgSource.length; i++)
+          +legacy(title[i],classNames[i], imgSource[i])
 
 
-        
+
 
 

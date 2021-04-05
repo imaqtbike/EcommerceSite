@@ -1327,3 +1327,170 @@ article .list__item:not(:last-child) img {
     padding: 0 1rem; }
   .blog__content .third-column {
     padding-left: 2rem; }
+
+.box .path__content {
+  border-bottom: 1.5px solid #dedddd80; }
+
+.blog__detail {
+  margin-bottom: 5rem; }
+  .blog__detail__content {
+    width: 100%;
+    display: flex; }
+    .blog__detail__content aside {
+      width: 25%; }
+
+.blog__pin__posts .posts__item {
+  display: flex;
+  margin-top: 3rem; }
+  .blog__pin__posts .posts__item__description {
+    margin-left: 2rem; }
+    .blog__pin__posts .posts__item__description h4 {
+      font-size: 2.8rem;
+      font-weight: 700; }
+      .blog__pin__posts .posts__item__description h4 small {
+        font-size: 1.4rem; }
+    .blog__pin__posts .posts__item__description p {
+      font-size: 1.4rem;
+      font-style: italic; }
+
+.blog__pin__tag {
+  margin-top: 5rem; }
+  .blog__pin__tag .tag__btn {
+    margin-top: 3rem; }
+    .blog__pin__tag .tag__btn button[type='button'] {
+      font-size: 1.2rem;
+      border: 1px solid #e6e6e6;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      margin: 0 0.5rem 1rem 0;
+      outline: none;
+      cursor: pointer;
+      background-color: #fff; }
+    .blog__pin__tag .tag__btn button[type='button']:hover {
+      color: #fff;
+      background-color: #789629; }
+
+.blog__pin__video {
+  margin-top: 5rem; }
+  .blog__pin__video .video__image {
+    width: 97%;
+    height: 20rem;
+    background-image: url("./assets/images/video.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 1rem 0 2rem; }
+    .blog__pin__video .video__image--overlay {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .blog__pin__video .video__image--overlay .overlay--icon {
+        width: 6rem;
+        height: 6rem;
+        background: #0000006b;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        cursor: pointer;
+        transition: all 0.3s; }
+        .blog__pin__video .video__image--overlay .overlay--icon i {
+          color: #fff;
+          margin-right: 0; }
+  .blog__pin__video .video__image:hover .overlay--icon {
+    opacity: 1; }
+
+.blog__pin .aside__title {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: inherit;
+  border-bottom: 1.5px solid #dedddd80;
+  text-transform: uppercase;
+  padding-bottom: 1rem; }
+
+.blog__pin .aside__title:nth-last-child(2) {
+  font-weight: 700; }
+
+.blog__article {
+  margin-left: 1.5rem; }
+  .blog__article img {
+    width: 100%;
+    margin-top: 3rem; }
+  .blog__article__title h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 6.2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1.5px solid #dedddd80; }
+  .blog__article__content p {
+    font-size: 1.6rem;
+    margin: 3rem 0;
+    line-height: 1.8; }
+  .blog__article__content span {
+    color: #e8e8e8;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic; }
+  .blog__article__content .blog__article__btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1.5px solid #dedddd80; }
+    .blog__article__content .blog__article__btn a {
+      text-decoration: none;
+      color: #e8e8e8;
+      font-size: 1.8rem;
+      font-weight: 400; }
+  .blog__article__tag {
+    display: flex;
+    margin-top: 5rem;
+    border-bottom: 1.5px solid #dedddd80;
+    padding-bottom: 1.5rem; }
+    .blog__article__tag h5 {
+      color: #e8e8e8;
+      font-size: 1.8rem;
+      font-weight: inherit;
+      margin-right: 1.5rem; }
+    .blog__article__tag p {
+      font-size: 1.8rem; }
+  .blog__article__comment {
+    margin-top: 2rem; }
+    .blog__article__comment h3 {
+      text-transform: uppercase;
+      color: #000;
+      font-size: 1.8rem;
+      font-weight: 600; }
+    .blog__article__comment .form-group {
+      display: flex;
+      flex-direction: row;
+      margin-top: 2rem; }
+      .blog__article__comment .form-group label {
+        width: 10%;
+        font-size: 1.6rem;
+        color: #000;
+        font-weight: 400;
+        margin-bottom: 0.5rem; }
+        .blog__article__comment .form-group label small {
+          margin-left: 0.5rem;
+          color: #789629; }
+      .blog__article__comment .form-group input[type='text'], .blog__article__comment .form-group input[type='email'], .blog__article__comment .form-group textarea {
+        width: 90%;
+        border: 1.5px solid #dedddd80;
+        padding: 1rem; }
+    .blog__article__comment .form-btn {
+      margin-top: 3rem; }
+      .blog__article__comment .form-btn a {
+        background: #000;
+        color: #fff;
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        text-transform: uppercase;
+        margin-left: 10%;
+        text-decoration: none; }

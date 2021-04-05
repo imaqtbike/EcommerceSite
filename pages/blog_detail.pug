@@ -1,0 +1,68 @@
+doctype html
+include ./blog/mixin_blog.pug
+head
+    include abstracts/meta
+body.container
+    include components/navigation
+section.path
+    .box
+        .path__content
+            ul
+                li
+                    a(href='#') Home
+                    i.fas.fa-angle-right
+                li
+                    a(href='#') Liên hệ
+section
+    .box
+        .blog.blog__detail
+            .blog__title
+                h1 BLOG
+            .blog__detail__content
+                aside
+                    .blog__pin
+                        .blog__pin__title
+                            h3.aside__title bài viết mới nhất
+                        .blog__pin__posts
+                            +blogDetailItem('./assets/images/blog-img11.jpg')
+                            +blogDetailItem('./assets/images/blog-img10.jpg')
+                            +blogDetailItem('./assets/images/blog-img12.jpg')
+                        .blog__pin__tag
+                            h3.aside__title BLOG TAGS
+                            .tag__btn
+                                each val in ['Đồng hồ', 'Túi', 'Phụ kiện', 'Giày', 'Sandals', 'Áo sơ mi', 'Nước hoa', 'Trẻ em', 'Thời trang nữ']
+                                    button(type='button')= val
+                        .blog__pin__video
+                            h3.aside__title LATEST VIDEO
+                            .video__image
+                                .video__image--overlay
+                                    .overlay--icon
+                                        i.fas.fa-play
+                article
+                    .blog__article
+                        img(src='./assets/images/blog-img4.jpg')
+                        .blog__article__title
+                            h1 nàng béo không ngại diện váy áo nổi bật
+                        .blog__article__content
+                            p Hi, chào các nàng...sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức,khi mà dân tính xô nhau đi tắm Free để giải nhiệt.Trong tiết xuân hè nàng ngoại cỡ thắp sáng phong cách bằng quần họa tiết nhiệt đới đi kèm áo sơ mi nhã nhặn. Trang phục họa tiết điện tử được nàng phối cùng chân váy kẻ caro, làm nên style vừa hiện đại, vừa phảng phất nét cổ điển. Lối diện đồ hằng ngày đơn giản, khỏe khoắn của cô khi kết hợp chất liệu jean. Nữ blogger rực rỡ khi hòa trộn các gam đổ, hồng, tím... một cách vui tươi, kèm theo các phụ kiện điệu đà.
+                            span Bởi NamTran (27/05/2015)
+                            .blog__article__btn
+                                a(href='#') Đọc thêm
+                                    i.fas.fa-angle-right
+                                a(href='#') Bình luận
+                        .blog__article__tag
+                                h5 Tag:
+                                p Men
+                        .blog__article__comment
+                            form(action='#')
+                                h3 Đóng góp ý kiến
+                                +formBlogDetail('Tên','text','*')
+                                +formBlogDetail('Email','email','*')
+                                .form-group
+                                    label Ý kiến
+                                        small *
+                                    textarea(rows=11)
+                                .form-btn
+                                    a(href='#') Gửi ý kiến
+footer.footer
+    include layouts/footer
