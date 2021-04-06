@@ -144,8 +144,13 @@ article {
     &__list {
       display: flex;
       height: 1.9rem;
-      &__horizontal i {
-        margin-right: 1rem;
+      &__horizontal, &__vertical {
+        a {
+          color: inherit;
+        }
+        i {
+          margin-right: 1rem;
+        }
       }
     }
       &__number {

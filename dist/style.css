@@ -541,9 +541,11 @@ body {
   margin-right: 0.4rem;
   transition: all 0.3s ease;
   cursor: pointer;
+  background-color: #fff;
   font-size: 1.2rem;
-  padding: 0.5rem 0.8rem;
-  margin-right: 4px; }
+  margin-right: 0.4rem;
+  padding: 1rem 1.47rem;
+  text-transform: uppercase; }
 
 .section__socials {
   margin: 4rem 0; }
@@ -982,7 +984,9 @@ article {
     article .pagination__list {
       display: flex;
       height: 1.9rem; }
-      article .pagination__list__horizontal i {
+      article .pagination__list__horizontal a, article .pagination__list__vertical a {
+        color: inherit; }
+      article .pagination__list__horizontal i, article .pagination__list__vertical i {
         margin-right: 1rem; }
     article .pagination__number .fa-caret-left {
       margin-right: 0.5rem; }
@@ -1046,6 +1050,7 @@ article {
             margin-right: 0.4rem;
             transition: all 0.3s ease;
             cursor: pointer;
+            background-color: #fff;
             padding: 1rem 2rem;
             font-size: 1.4rem;
             background-color: #fff; }
@@ -1152,6 +1157,7 @@ article .list__item:not(:last-child) img {
     margin-right: 0.4rem;
     transition: all 0.3s ease;
     cursor: pointer;
+    background-color: #fff;
     text-transform: uppercase;
     font-size: 1.4rem;
     padding: 1rem 1.8rem;
@@ -1611,3 +1617,21 @@ article .list__item:not(:last-child) img {
       text-decoration: none;
       text-transform: uppercase;
       padding: 1.2rem 2.3rem; }
+
+.list__content .grid__product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 1rem; }
+  .list__content .grid__product .legacy__items__detail {
+    width: 100%; }
+    .list__content .grid__product .legacy__items__detail__icon .legacy-cta i {
+      color: #789629; }
+    .list__content .grid__product .legacy__items__detail__icon a:hover {
+      color: #fff;
+      background-color: #789629; }
+    .list__content .grid__product .legacy__items__detail__icon a:hover i {
+      color: #fff; }
+    .list__content .grid__product .legacy__items__detail__icon button:hover {
+      color: #fff;
+      background-color: #789629; }

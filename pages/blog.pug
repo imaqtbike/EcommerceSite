@@ -20,7 +20,7 @@ section
             .blog__title
                 h1 BLOG
             .blog__content
-                +listPagination
+                +listBlog
                 .posts
                     +postItem('./assets/images/blog-img7.jpg','first-column')
                     +postItem('./assets/images/blog-img2.jpg','mid-column')
@@ -31,6 +31,6 @@ section
                     +postItem('./assets/images/blog-img8.jpg','first-column')
                     +postItem('./assets/images/blog-img5.jpg','mid-column')
                     +postItem('./assets/images/blog-img1.jpg','third-column')
-                +listPagination
+                +listBlog
 footer.footer
     include layouts/footer

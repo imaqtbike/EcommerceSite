@@ -1,0 +1,29 @@
+.list__content{
+  .grid__product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 1rem;
+    .legacy__items__detail {
+      width: 100%;
+      &__icon {
+        .legacy-cta {
+          i {
+            color: $color-dark-green;
+          }
+          }
+          a:hover  {
+            color: $color-white;
+            background-color: $color-dark-green;
+          }
+          a:hover i{
+              color: $color-white;
+          }
+          button:hover {
+            color: $color-white;
+            background-color: $color-dark-green;
+          }
+        }
+      }
+    }
+}

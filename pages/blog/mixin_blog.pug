@@ -25,3 +25,18 @@ mixin formBlogDetail(name,inputType)
     .form-group
         label=name
         input(type=inputType)
+
+mixin listBlog
+    .list__content__pagination
+        .pagination
+            .pagination__list
+                .pagination__list__horizontal
+                    i.fas.fa-th-large
+                .pagination__list__vertical
+                    i.fas.fa-list
+            .pagination__number
+                i.fas.fa-caret-left
+                span.active 1
+                span 2
+                span 3
+                i.fas.fa-caret-right
