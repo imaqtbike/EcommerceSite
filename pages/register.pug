@@ -1,0 +1,41 @@
+doctype html
+include ./blog/mixin_blog.pug
+head
+    include abstracts/meta
+body.container
+    include components/navigation
+section.path
+    .box
+        .path__content
+            ul
+                li
+                    a(href='#') Home
+                    i.fas.fa-angle-right
+                li
+                    a(href='#') Đăng ký
+section.register
+    .box
+        .register__form
+            .form__title
+                h1  Đăng ký
+            .form
+                form(action='#')
+                    .form__content
+                        .form__main__title
+                            h3 Thông tin cá nhân
+                        - let labelInfo1 = ['Tên trước *', 'Tên sau *', 'Email *', 'Password *']
+                        - let inputType = ['text', 'text', 'email','password']
+                        - for (let i =0; i < labelInfo1.length; i++)
+                        - for (let i =0; i < inputType.length; i++)
+                            +formBlogDetail(labelInfo1[i], inputType[i])
+                        .form__main__title
+                            h3 Thông tin đăng nhập
+                        +formBlogDetail('Mật khẩu*', 'password')
+                        +formBlogDetail('Xác nhận mật khẩu *', 'password')
+                        .btn-form
+                            a(href='#') Gửi
+                            a(href='#')
+                                i.fas.fa-reply
+                                |  Quay lại
+footer.footer
+    include layouts/footer

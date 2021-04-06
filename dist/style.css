@@ -80,6 +80,10 @@ body {
   font-family: 'Myriad Pro';
   src: url(./assets/fonts/MYRIADPRO-SEMIBOLD.OTF); }
 
+@font-face {
+  font-family: "UTM ViceroyJF";
+  src: url(./assets/fonts/00187-UTM-ViceroyJF.ttf); }
+
 .legacy__title {
   margin: 0 auto;
   padding: 7rem 0;
@@ -707,7 +711,7 @@ header {
   text-align: center; }
   .header__content h2 {
     color: #789629;
-    font-family: "Curlz MT", cursive;
+    font-family: "UTM ViceroyJF", sans-serif;
     font-size: 13.6rem;
     font-weight: 500; }
   .header__content p {
@@ -1494,3 +1498,60 @@ article .list__item:not(:last-child) img {
         text-transform: uppercase;
         margin-left: 10%;
         text-decoration: none; }
+
+.register {
+  width: 100%;
+  margin-bottom: 8rem; }
+
+.form__main__title {
+  margin-top: 3rem; }
+
+.register__form {
+  width: 100%; }
+  .register__form .form__title h1 {
+    font-size: 2.8rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 2rem 0; }
+  .register__form .form {
+    background: #f2f2f2;
+    border: 1px solid #e8e8e8; }
+    .register__form .form form {
+      padding: 3rem 5rem; }
+      .register__form .form form h3 {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem; }
+    .register__form .form .form-group {
+      display: flex;
+      flex-direction: column; }
+      .register__form .form .form-group input {
+        padding: 1rem 1.5rem;
+        margin-bottom: 1.5rem;
+        border: none;
+        outline: none; }
+    .register__form .form .form-group label {
+      color: #000;
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem; }
+
+.form__content .btn-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem; }
+  .form__content .btn-form a {
+    background: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .form__content .btn-form a:nth-child(2) .fa-reply {
+    margin-right: 1rem; }
