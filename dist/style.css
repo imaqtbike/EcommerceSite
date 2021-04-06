@@ -1555,3 +1555,59 @@ article .list__item:not(:last-child) img {
     text-transform: uppercase; }
   .form__content .btn-form a:nth-child(2) .fa-reply {
     margin-right: 1rem; }
+
+.login {
+  margin-bottom: 8rem; }
+  .login .form__title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem; }
+    .login .form__title .btn-form {
+      margin: 2rem 0;
+      padding: 0.5rem 1rem;
+      display: flex; }
+      .login .form__title .btn-form a {
+        background: #000;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0.8rem 2.3rem; }
+  .login .register__form .form__content {
+    width: 50%; }
+    .login .register__form .form__content .form__main__title {
+      margin-bottom: 4.2rem; }
+      .login .register__form .form__content .form__main__title h3 {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 2.5rem; }
+      .login .register__form .form__content .form__main__title p {
+        font-size: 1.2rem;
+        font-weight: 700; }
+    .login .register__form .form__content label {
+      font-size: 1.3rem; }
+  .login .register__form .btn-form__login {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem; }
+    .login .register__form .btn-form__login p {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-right: 2rem; }
+    .login .register__form .btn-form__login a {
+      background: #000;
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 0.5rem 1rem;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 1.2rem 2.3rem; }

@@ -1,0 +1,53 @@
+.login {
+  margin-bottom: 8rem;
+  .form__title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    .btn-form {
+      margin: 2rem 0;
+      padding: 0.5rem 1rem;
+      display: flex;
+      a {
+        @include accountButton;
+        padding: 0.8rem 2.3rem;
+      }
+    }
+  }
+  .register__form {
+    .form__content {
+      width: 50%;
+      .form__main__title {
+        margin-bottom: 4.2rem;
+        h3 {
+          text-transform: uppercase;
+          color: $color-black;
+          font-size: 1.8rem;
+          font-weight: 500;
+          margin-bottom: 2.5rem;
+        }
+        p {
+          font-size: $font-size-sm;
+          font-weight: 700;
+        }
+      }
+      label {
+        font-size: 1.3rem;
+      }
+      }
+      .btn-form__login {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        p {
+          font-size: 1.3rem;
+          font-weight: 600;
+          margin-right: 2rem;
+        }
+        a {
+          @include accountButton;
+          padding: 1.2rem 2.3rem;
+        }
+      }
+    }
+  }
