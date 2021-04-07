@@ -1744,3 +1744,79 @@ article .list__item:not(:last-child) img {
   .account .account__info__phone p {
     font-size: 1.4rem;
     line-height: 1.5; }
+
+.contact {
+  width: 100%;
+  margin-bottom: 8rem; }
+  .contact__title h1 {
+    font-size: 2.8rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 2rem 0; }
+  .contact__content {
+    display: flex; }
+    .contact__content__img {
+      flex: 1;
+      padding-right: 1.5rem; }
+    .contact__content__form {
+      flex: 1;
+      padding-left: 1.5rem;
+      width: 100%; }
+      .contact__content__form label {
+        color: #000;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem; }
+      .contact__content__form__title h3 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 400; }
+      .contact__content__form__group .form-group {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem; }
+        .contact__content__form__group .form-group label {
+          flex: 1; }
+        .contact__content__form__group .form-group input {
+          padding: 1rem 1.5rem;
+          margin-bottom: 0.5rem;
+          border: none;
+          outline: none; }
+        .contact__content__form__group .form-group input,
+        .contact__content__form__group .form-group textarea {
+          flex: 5;
+          border: 0.1rem solid #e8e8e8; }
+        .contact__content__form__group .form-group textarea {
+          padding-left: 1rem;
+          outline: none; }
+        .contact__content__form__group .form-group input {
+          margin-left: 5px; }
+      .contact__content__form__group__btn {
+        float: right; }
+        .contact__content__form__group__btn a {
+          background: #000;
+          color: #fff;
+          font-size: 1.2rem;
+          padding: 0.5rem 2rem;
+          outline: none;
+          cursor: pointer;
+          border: none;
+          text-transform: uppercase;
+          text-decoration: none; }
+    .contact__content form {
+      width: 100%; }
+
+@media screen and (max-width: 1300px) {
+  .contact__content {
+    flex-direction: column; }
+    .contact__content__img {
+      width: 100%;
+      padding-right: 0 !important; }
+      .contact__content__img img {
+        width: 100%; }
+    .contact__content__form {
+      padding-left: 0 !important;
+      margin-top: 40px; } }
