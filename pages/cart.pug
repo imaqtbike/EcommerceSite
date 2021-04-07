@@ -1,7 +1,37 @@
 doctype html
+include ./cart/mixin_cart
 head
     include abstracts/meta
 body.container
     include components/navigation
+section.section__detail--path
+    .box
+        .path__content
+            ul
+                li
+                    a(href='#') Home
+                    i.fas.fa-angle-right
+                li
+                    a(href='#') Sản phẩm
+                    i.fas.fa-angle-right
+                li
+                    a(href='#') Trang sức
+                    i.fas.fa-angle-right
+section
+    .box
+        .cart__content
+            .cart__content__title
+                h1 Giỏ hàng
+            .cart__content__table
+                table
+                    tr
+                        each val in ['Ảnh', 'tên sản phẩm', 'giá','số lượng', 'tổng số','xóa']
+                            th=val
+                    +tableDataCart('./assets/images/product.jpg','1')
+                    +tableDataCart('./assets/images/product.jpg','2')
+            .cart__content__btn
+                button.buying(type="button") Tiếp tục mua hàng
+                button.delete(type="button") Xóa
+                button.payment(type="button") Thanh toán 
 footer.footer
     include layouts/footer

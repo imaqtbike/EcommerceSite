@@ -1,0 +1,14 @@
+mixin tableDataCart(source,quantity,sum)
+    - if (quantity === '1') {sum = '345.000đ'} else {sum = '690.000đ'}
+    tr
+        td
+            img(src=source)
+        td Lắc tay D&G
+        td
+            span 345.000đ
+        td=quantity
+        td
+            span=sum
+        td
+            i.far.fa-trash-alt
+                

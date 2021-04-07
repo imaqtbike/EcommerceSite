@@ -667,7 +667,6 @@ body {
     font-size: 1.2rem;
     border: 1px solid #e6e6e6;
     padding: 0.5rem 1rem;
-    font-size: 1.2rem;
     margin: 0 0.5rem 1rem 0;
     outline: none;
     cursor: pointer; }
@@ -678,7 +677,6 @@ body {
       font-size: 1.2rem;
       border: 1px solid #e6e6e6;
       padding: 0.5rem 1rem;
-      font-size: 1.2rem;
       margin: 0 0.5rem 1rem 0;
       outline: none;
       cursor: pointer;
@@ -966,7 +964,6 @@ section .product__list {
     font-size: 1.2rem;
     border: 1px solid #e6e6e6;
     padding: 0.5rem 1rem;
-    font-size: 1.2rem;
     margin: 0 0.5rem 1rem 0;
     outline: none;
     cursor: pointer; }
@@ -1371,7 +1368,6 @@ article .list__item:not(:last-child) img {
       font-size: 1.2rem;
       border: 1px solid #e6e6e6;
       padding: 0.5rem 1rem;
-      font-size: 1.2rem;
       margin: 0 0.5rem 1rem 0;
       outline: none;
       cursor: pointer;
@@ -1635,6 +1631,56 @@ article .list__item:not(:last-child) img {
     .list__content .grid__product .legacy__items__detail__icon button:hover {
       color: #fff;
       background-color: #789629; }
+
+.cart__content {
+  width: 100%; }
+  .cart__content__title h1 {
+    font-size: 2.8rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 2rem; }
+  .cart__content__table table {
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 5rem; }
+    .cart__content__table table th {
+      background-color: #fafafa;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight: 400;
+      padding: 0.5rem 0; }
+    .cart__content__table table td {
+      font-size: 1.3rem;
+      padding: 1.5rem 0;
+      border: 0.1rem solid #e8e8e8;
+      border-collapse: collapse;
+      text-align: center;
+      vertical-align: middle; }
+      .cart__content__table table td img {
+        width: 40%; }
+      .cart__content__table table td span {
+        font-family: "Lobster", cursive;
+        font-size: 1.6rem; }
+  .cart__content__btn {
+    margin: 3rem 0 8rem;
+    display: flex;
+    justify-content: flex-end; }
+    .cart__content__btn button {
+      margin-left: 1rem;
+      background: #000;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 0.9rem 2rem;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      text-transform: uppercase; }
+      .cart__content__btn button:hover {
+        background-color: #789629; }
 
 .path__content #path__content--red {
   color: red; }
