@@ -22,15 +22,11 @@ section
             .blog__content
                 +listBlog
                 .posts
-                    +postItem('./assets/images/blog-img7.jpg','first-column')
-                    +postItem('./assets/images/blog-img2.jpg','mid-column')
-                    +postItem('./assets/images/blog-img9.jpg','third-column')
-                    +postItem('./assets/images/blog-img4.jpg','first-column')
-                    +postItem('./assets/images/blog-img3.jpg','mid-column')
-                    +postItem('./assets/images/blog-img6.jpg','third-column')
-                    +postItem('./assets/images/blog-img8.jpg','first-column')
-                    +postItem('./assets/images/blog-img5.jpg','mid-column')
-                    +postItem('./assets/images/blog-img1.jpg','third-column')
+                    -let imageSrc =['./assets/images/blog-img7.jpg','./assets/images/blog-img2.jpg','./assets/images/blog-img9.jpg','./assets/images/blog-img4.jpg','./assets/images/blog-img3.jpg','./assets/images/blog-img6.jpg','./assets/images/blog-img8.jpg','./assets/images/blog-img5.jpg','./assets/images/blog-img1.jpg',]
+                    - let column= ['first-column', 'mid-column', 'third-column','first-column', 'mid-column', 'third-column','first-column', 'mid-column', 'third-column']
+                    -for (let i = 0; i< imageSrc.length; i++)
+                    -for (let i= 0; i <column.length; i++)
+                            +postItem(imageSrc[i], column[i])
                 +listBlog
 footer.footer
     include layouts/footer

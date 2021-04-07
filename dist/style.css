@@ -1635,3 +1635,66 @@ article .list__item:not(:last-child) img {
     .list__content .grid__product .legacy__items__detail__icon button:hover {
       color: #fff;
       background-color: #789629; }
+
+.path__content #path__content--red {
+  color: red; }
+
+.account {
+  margin-bottom: 80px;
+  display: flex;
+  width: 100%; }
+  .account article {
+    width: 75%; }
+    .account article .account__content {
+      padding-right: 1.5rem; }
+      .account article .account__content__title h1 {
+        font-size: 2.8rem;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 2rem; }
+      .account article .account__content__table table {
+        width: 100%; }
+        .account article .account__content__table table tr th {
+          background-color: #fafafa;
+          font-size: 1.2rem;
+          font-weight: 700;
+          padding: 1.5rem 0; }
+        .account article .account__content__table table tr td {
+          padding: 1.5rem 0;
+          font-size: 1.4rem;
+          border: 0.1rem solid #e8e8e8;
+          border-collapse: collapse;
+          text-align: center; }
+        .account article .account__content__table table tbody > tr:not(:first-child) td:nth-child(3) {
+          color: red; }
+  .account aside {
+    width: 25%; }
+    .account aside .account__info__title {
+      border-bottom: 1.5px solid #dedddd80; }
+      .account aside .account__info__title h3 {
+        font-weight: 600;
+        height: 3.8rem;
+        margin: 2rem 0;
+        text-transform: uppercase; }
+    .account aside .account__info .info__item {
+      display: flex;
+      align-items: baseline; }
+  .account .account__info__user {
+    margin-top: 2rem;
+    padding-bottom: 1rem; }
+    .account .account__info__user h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem; }
+    .account .account__info__user p {
+      font-size: 1.4rem;
+      line-height: 1.5; }
+  .account .account__info__address {
+    margin-top: 2rem; }
+    .account .account__info__address p {
+      font-size: 1.4rem;
+      line-height: 1.5; }
+  .account .account__info__phone p {
+    font-size: 1.4rem;
+    line-height: 1.5; }

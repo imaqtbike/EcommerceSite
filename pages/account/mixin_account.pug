@@ -1,0 +1,6 @@
+mixin tableData(debt)
+    - let payment = 'Đã thanh toán';
+    - if (debt !== '0') {payment = 'Thanh toán 50%'}
+    tr
+        each val in ['#1006', 'May 13, 2013', payment, '350.000đ',debt]
+            td=val
