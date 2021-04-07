@@ -1820,3 +1820,36 @@ article .list__item:not(:last-child) img {
     .contact__content__form {
       padding-left: 0 !important;
       margin-top: 40px; } }
+
+.about__title h1 {
+  font-size: 2.8rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 2rem 0; }
+
+.about__content {
+  display: flex;
+  margin-bottom: 5rem; }
+  .about__content__img {
+    flex: 1; }
+  .about__content__description {
+    flex: 1; }
+    .about__content__description .logo {
+      display: flex;
+      position: relative; }
+    .about__content__description__title {
+      margin-top: 3rem; }
+      .about__content__description__title h3 {
+        color: #000;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase; }
+      .about__content__description__title p {
+        line-height: 1.5;
+        margin: 1rem 0;
+        font-size: 1.2rem; }
+      .about__content__description__title a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #000; }

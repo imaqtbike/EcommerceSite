@@ -1,0 +1,40 @@
+.about {
+  &__title {
+    h1 {
+    @include contentTitle
+    }
+  }
+  &__content {
+    display: flex;
+    margin-bottom: 5rem;
+    &__img {
+      flex: 1;
+    }
+    &__description {
+      flex: 1;
+      .logo {
+        display: flex;
+        position: relative;
+      }
+      &__title {
+        margin-top: 3rem;
+        h3 {
+          color: $color-black;
+          font-size: 1.8rem;
+          font-weight: 600;
+          text-transform: uppercase
+        }
+        p {
+          line-height: 1.5;
+          margin: 1rem 0;
+          font-size: $font-size-sm;
+        }
+        a {
+          font-size: $font-size-sm;
+          text-decoration: none;
+          color: $color-black;
+        }
+      }
+    }
+  }
+}

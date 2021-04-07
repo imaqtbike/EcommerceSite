@@ -1,0 +1,34 @@
+doctype html
+head
+    include abstracts/meta
+body.container
+    include components/navigation
+section.path
+    .box
+        .path__content
+            ul
+                li
+                    a(href='#') Home
+                    i.fas.fa-angle-right
+                li
+                    a(href='#') Về chúng tôi
+section
+    .box
+        .about
+            .about__title
+                h1 về chúng tôi
+            .about__content
+                .about__content__img
+                    img(src='./assets/images/img-about.jpg')
+                .about__content__description
+                    .logo
+                        .logo-square
+                        img.logo-img(src='./assets/images/logo.png')
+                    .about__content__description__title
+                        h3 giới thiệu chung về mỹ phẩm handmade mandala
+                        p Hi, chào các nàng... sau khá nhiều lời hứa hảo thì hôm nay tớ quay lại hâm nóng Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                            | Hi, chào các nàng... sau khá nhiều lời hứa hảo thì hôm nay tớ quay lại hâm nóng Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                            | sau khá nhiều lời hứa hảo thì hôm nay tớ quay lại hâm nóng Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                        a(href="#") Xem thêm
+footer.footer
+    include layouts/footer

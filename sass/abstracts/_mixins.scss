@@ -116,3 +116,11 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+@mixin contentTitle {
+  font-size: 2.8rem;
+  color: $color-black;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 2rem 0;
+}
