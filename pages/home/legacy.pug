@@ -11,6 +11,17 @@
                 ul
                     each val in ['Mỹ phẩm', '.', 'Chăm sóc da', 'Nước hoa','.', 'Trang sức', '.', 'Quà tặng']
                         li= val
+        .legacy__title__menu--vertical
+            .menu
+                ul
+                    .menu--vertical
+                        each val in ['Mỹ phẩm', 'Chăm sóc da', 'Dành cho tóc']
+                            li
+                                a(href='#')=val
+                    .menu--vertical
+                        each val in ['Nước hoa', 'Trang sức', 'Quà tặng']
+                            li
+                                a(href='#')=val
 include mixin_home
 .legacy__items
     figure

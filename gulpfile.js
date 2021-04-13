@@ -5,7 +5,7 @@ const { src, dest, parallel, watch, series } = require("gulp"),
   browserSync = require("browser-sync").create();
 
 
-const FilesPath = {sassFiles: "sass/**/*", htmlFiles: "pages/**/*.pug"};
+const FilesPath = {sassFiles: "sass/**/*", htmlFiles: "pages/**/*.pug",jsFiles: "js/*.js",};
 
 
 function sassTask() {
@@ -17,6 +17,10 @@ function htmlTask() {
     .pipe(pug({ pretty: true }))
     .pipe(dest("./dist"))
     .pipe(browserSync.stream());
+}
+
+function jsTask() {
+  return src(FilesPath.jsFiles).pipe(dest("./dist"));
 }
 
 function assetsTask() {
@@ -32,5 +36,5 @@ function server() {
 exports.sass = sassTask;
 exports.pug = htmlTask;
 exports.assets = assetsTask;
-exports.default = series(parallel(htmlTask, sassTask, assetsTask));
-exports.server = series(server, parallel(htmlTask, sassTask, assetsTask));
+exports.default = series(parallel(htmlTask, sassTask, assetsTask, jsTask));
+exports.server = series(server, parallel(htmlTask, sassTask, assetsTask, jsTask));

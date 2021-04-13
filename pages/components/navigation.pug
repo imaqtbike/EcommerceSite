@@ -1,27 +1,65 @@
+- const listMenu = [{content: 'TRANG CHỦ', link:'index.html'}, {content: 'GIỚI THIỆU', link:'about.html'}, {content: 'SẢN PHẨM', link:'grid.html', className: 'dropdown', i: 'fas fa-chevron-down', dropdown: [{ul:'DƯỠNG DA', li: ['Áo khoác','Bộ áo liền quần', 'Dresses','Quần/váy','Quần short','Quần jean','Đồ đan', 'Áo nỉ'],link:'list.html'},{ul:'NƯỚC HOA', li: ['Áo cánh/Áo sơ mi', 'Túi xách & Balo', 'Khăn quàng cổ và Foulards','Dệt kim Hats & Gloves', 'Vớ và Socks','Jewerly','Bị bảo vệ','Giày'],link:'list.html'},{ul:'TRANG SỨC', li: ['Áo cánh/Áo sơ mi', 'Túi xách & Balo', 'Khăn quàng cổ và Foulards','Dệt kim Hats & Gloves', 'Vớ và Socks','Jewerly','Bị bảo vệ','Giày'],link:'list.html'}]}, {content: 'TIN TỨC', link:'blog.html'}, {content: 'BẢN ĐỒ', link: '#'}, {content: 'LIÊN HỆ', link:'contact.html'}];
 header
     .box
         .nav
-            .nav__logo
+            .nav__logo.logo
                 .nav__logo--square.logo-square
-                    a(href='index.html')
-                        img.logo-img(src='./assets/images/logo.png' alt='logo company')
+                    a(href="./index.html")
+                        img.logo-img(src='./assets/images/logo.png')
             .nav__menu
-                ul.menu
-                    li
-                        a(href='./index.html') Trang chủ
-                    li
-                        a(href='./detail.html') Giới thiệu
-                    li
-                        a(href='#') Sản phẩm
-                    li
-                        a(href='./blog.html') Tin tức
-                    li
-                        a(href='#') Bản đồ
-                    li
-                        a(href='./contact_us.html') Liên hệ
-            .nav-button
-                i.fas.fa-shopping-cart
-                i.fas.fa-search
-        
-        
-
+                ul
+                    each menu in listMenu
+                        li(class=menu.className)
+                            a(href=menu.link)
+                                | #{menu.content}
+                                i(class=menu.i)
+                                if menu.dropdown
+                                    .arrow-up
+                                    .dropdown-list
+                                        each item in menu.dropdown
+                                            .dropdown-list__item
+                                                a(href="./list.html").list-name= item.ul
+                                                ul
+                                                    each list in item.li
+                                                        li.list-item
+                                                            a(href="./detail.html") #{list}
+            .nav__cart
+                a(href="./cart.html")
+                    .cart
+                        i.fas.fa-shopping-cart
+                        .number-cart
+                            span 0
+                a(href="#")
+                    i.fas.fa-search.search
+                .nav__cart__bar
+                    input.nav__cart__bar--checkbox(type="checkbox" id="menu-toggle")
+                    label(for="menu-toggle")
+                        i.fas.fa-bars.bar
+                    .nav__cart__bar__menu
+                        .bar-logo.logo
+                            .bar-logo--square.logo-square
+                                a(href="./index.html")
+                                    img.logo-img(src='./assets/images/logo.png')
+                        .bar-menu
+                            ul
+                                each menu in listMenu
+                                    li(class=menu.className)
+                                        a(href=menu.link)
+                                            | #{menu.content}
+                                            if menu.dropdown
+                                                .dropdown-list
+                                                    each item in menu.dropdown
+                                                        .dropdown-list__item
+                                                            a(href="./list.html").list-name= item.ul
+                                                            ul
+                                                                each list in item.li
+                                                                    li.list-item
+                                                                        a(href="./detail.html") #{list}
+                        .bar-cart
+                            a(href="./cart.html")
+                                .cart
+                                    i.fas.fa-shopping-cart
+                                    .number-cart
+                                        span
+                            a(href="#")
+                                i.fas.fa-search.search

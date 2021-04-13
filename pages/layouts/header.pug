@@ -6,8 +6,19 @@
             span Giá chỉ 750.000d
             br
             .btn
-                label
-                    a(href="./list.html") Mua hàng
+                input(type="checkbox" id="newsletter-toggle")
+                label(for="newsletter-toggle") mua hàng
+                .btn__overlay
+                    .newsletter
+                        .newsletter__content
+                            .newsletter__content__icon
+                                label(for="newsletter-toggle")
+                                    img(src='./assets/images/close-popup.jpg')
+                            h3 gửi email
+                            p Hãy gửi email của bạn liên hệ với chúng tôi để được tư vấn tốt hơn <br/>
+                            p Sự hài lòng của bạn là thành công của chúng tôi
+                            input(type="text" placeholder="Email của bạn...")
+                            a(href="#") gửi email
             
             
             

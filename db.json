@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "OHUI",
+      "name": "Mỹ phẩm châu Âu",
+      "price": 395000,
+      "oldPrice": "",
+      "disable": "disable",
+      "img": "./assets/images/product5.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 2,
+      "productName": "HOME",
+      "name": "Mỹ phẩm châu Âu",
+      "price": 335000,
+      "oldPrice": 450000,
+      "disable": "",
+      "img": "./assets/images/product4.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 3,
+      "productName": "DEBORA",
+      "name": "Mỹ phẩm châu Âu",
+      "price": 435000,
+      "oldPrice": "",
+      "disable": "disable",
+      "img": "./assets/images/product6.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 4,
+      "productName": "SARVON",
+      "name": "Mỹ phẩm châu Âu",
+      "price": 350000,
+      "oldPrice": "",
+      "disable": "disable",
+      "img": "./assets/images/product1.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 5,
+      "productName": "TYFFANY",
+      "name": "Mỹ phẩm châu Âu",
+      "price": 345000,
+      "oldPrice": 450000,
+      "disable": "",
+      "img": "./assets/images/product8.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 6,
+      "productName": "TYFFANY",
+      "name": "Mỹ phẩm châu Âu",
+      "price": 335000,
+      "oldPrice": "",
+      "disable": "disable",
+      "img": "./assets/images/product7.jpg",
+      "inCart": 1
+    }
+  ]
+}

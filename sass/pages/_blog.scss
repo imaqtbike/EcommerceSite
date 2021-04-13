@@ -1,3 +1,20 @@
+@include tablet {
+  .blog__path {
+    .box {
+      width: 72rem;
+    }
+  }
+  .blog__box {
+    width: 72rem;
+  }
+}
+@include mobile {
+  .blog__box {
+    display: flex;
+    margin: 0 auto;
+    width: 95%;
+  }
+}
 .blog  {
   width: 100%;
   .blog__title h1 {
@@ -23,6 +40,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    @include mobile {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr
+    }
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
     .post__item {
       margin-top: 3rem;
       img {
@@ -67,12 +92,21 @@
     }
     .first-column {
       padding-right: 2rem;
+      @include mobile {
+        display: none;
+      }
     }
     .mid-column{
       padding:0 1rem;
     }
     .third-column{
       padding-left: 2rem;
+      @include mobile{
+        display: none;
+      }
+      @include tablet{
+        display: none;
+      }
     }
   }
 

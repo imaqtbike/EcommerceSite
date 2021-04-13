@@ -19,4 +19,10 @@ body {
   display: flex;
   width: 118rem;
   margin: 0 auto;
+  @include tablet {
+    width: 720px;
+  }
+  @include mobile {
+    width: 32rem;
+  }
 }

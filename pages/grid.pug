@@ -3,9 +3,10 @@ include ./home/mixin_home.pug
 include ./list/mixin_list.pug
 head
     include abstracts/meta
+    script(src='../js/grid.js' type='text/javascript')
 body.container
     include components/navigation
-section.path
+section.path.grid__path
     .box
         .path__content
             ul
@@ -21,7 +22,7 @@ section.advertisement
             .content__time
                 h4 trong vòng 3 ngày
                 p ( 25/5 - 28/5/2015 )
-section
+section.grid
     .box
         .product__list
             aside

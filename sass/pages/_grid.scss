@@ -1,3 +1,17 @@
+.grid__path {
+  .box {
+    @include tablet {
+      width: 72rem;
+    }
+  }
+}
+.grid {
+  .box {
+    @include tablet {
+      width: 72rem;
+    }
+  }
+}
 .list__content{
   .grid__product {
   display: grid;
@@ -6,6 +20,9 @@
   margin-top: 1rem;
     .legacy__items__detail {
       width: 100%;
+      @include tablet{
+        width: 245px;
+      }
       &__icon {
         .legacy-cta {
           i {
@@ -26,4 +43,66 @@
         }
       }
     }
+}
+
+.grid__product {
+  .legacy__items__detail {
+    @include tablet {
+      img {
+        width: 100%;
+      }
+    }
+    &__content {
+      margin-top: 1.5rem;
+      text-align: center;
+      h4 {
+        color: $color-space-gray;
+        font-size: 1.4rem
+      }
+      a {
+        color: $color-black;
+        text-decoration: none;
+        p {
+          position: relative;
+          height: 3rem;
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin-top: 1rem;
+        }
+      }
+      .price {
+        color: #789629;
+        font-family: 'Lobster', cursive;
+        font-size: 1.8rem;
+        display: inline-block;
+        margin-top: 1rem
+      }
+    }
+    &__icon {
+      text-align: center;
+      margin: 25px 0;
+      opacity: 0;
+      .legacy-cta {
+        button,a {
+          font-weight: 700;
+          border: #e6e6e6 1px solid;
+          outline: none;
+          border-radius: 1.2rem;
+          margin-right: 0.4rem;
+          transition: all 0.3s ease;
+          cursor: pointer;
+          background-color: #fff;
+          font-size: 1.2rem;
+          padding: 10px 13px;
+          text-transform: uppercase;
+          @include mobile {
+            padding: 6px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.legacy__items__detail:hover .legacy__items__detail__icon {
+  opacity: 1;
 }

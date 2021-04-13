@@ -26,6 +26,9 @@
   background-image: url("./assets/images/bg-discount.jpg");
   background-size: cover;
   background-position: center;
+  @include mobile {
+    display: none;
+  }
   .box {
     display: flex;
     width: 118rem;
@@ -58,12 +61,48 @@
     }
   }
 }
+.grid {
+  @include mobile {
+    width: 100%;
+    .box {
+      width: 95%;
+    }
+  }
+}
 
+.list {
+  @include mobile{
+    width: 100%;
+    .box {
+      width: 95%;
+    }
+  }
+  @include tablet{
+    width: 100%;
+    .box {
+      width: 95%;
+    }
+  }
+}
 section .product__list {
   margin: 5rem 0 8rem;
   display: flex;
+  @include mobile {
+    flex-direction: column;
+    width: 100%;
+  }
+  @include tablet {
+    flex-direction: column;
+    width: 100%;
+  }
   aside {
     width: 25%;
+    @include mobile {
+      width: 100%;
+    }
+    @include tablet {
+      width: 100%;
+    }
     .categories {
       margin-right: 1.5rem;
       }
@@ -130,12 +169,30 @@ section .product__list {
 
 .categories__img {
   margin-top: 4rem;
+  @include mobile {
+    display: none;
+  }
+  @include tablet{
+    display: none;
+  }
 }
 
 ///===================Article=================///
 
 article {
   width: 75%;
+  @include mobile {
+    width: 100%;
+    .list__content__pagination {
+      margin: 25px 0;
+    }
+  }
+  @include tablet {
+    width: 100%;
+    .list__content__pagination {
+      margin: 25px 0;
+    }
+  }
   .pagination {
     display: flex;
     justify-content: space-between;
@@ -176,6 +233,10 @@ article {
       display: flex;
       height: 30rem;
       margin-top: 3rem;
+      @include mobile {
+        flex-direction: column;
+        height: 700px;
+      }
     }
     .list__content__item__info {
       margin-left: 3rem;
@@ -242,4 +303,3 @@ article {
 article .list__item:not(:last-child) img {
   @include borderBottomDotted
 }
-

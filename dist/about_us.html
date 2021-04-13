@@ -22,20 +22,124 @@
   <header>
     <div class="box">
       <div class="nav">
-        <div class="nav__logo">
-          <div class="nav__logo--square logo-square"><a href="index.html"><img class="logo-img" src="./assets/images/logo.png" alt="logo company"></a></div>
+        <div class="nav__logo logo">
+          <div class="nav__logo--square logo-square"><a href="./index.html"><img class="logo-img" src="./assets/images/logo.png"></a></div>
         </div>
         <div class="nav__menu">
-          <ul class="menu">
-            <li><a href="./index.html">Trang chủ</a></li>
-            <li><a href="./detail.html">Giới thiệu</a></li>
-            <li><a href="#">Sản phẩm</a></li>
-            <li><a href="./blog.html">Tin tức</a></li>
-            <li><a href="#">Bản đồ</a></li>
-            <li><a href="./contact_us.html">Liên hệ</a></li>
+          <ul>
+            <li><a href="index.html">TRANG CHỦ<i></i></a></li>
+            <li><a href="about.html">GIỚI THIỆU<i></i></a></li>
+            <li class="dropdown"><a href="grid.html">SẢN PHẨM<i class="fas fa-chevron-down"></i>
+                <div class="arrow-up"></div>
+                <div class="dropdown-list">
+                  <div class="dropdown-list__item"><a class="list-name" href="./list.html">DƯỠNG DA</a>
+                    <ul>
+                      <li class="list-item"><a href="./detail.html">Áo khoác</a></li>
+                      <li class="list-item"><a href="./detail.html">Bộ áo liền quần</a></li>
+                      <li class="list-item"><a href="./detail.html">Dresses</a></li>
+                      <li class="list-item"><a href="./detail.html">Quần/váy</a></li>
+                      <li class="list-item"><a href="./detail.html">Quần short</a></li>
+                      <li class="list-item"><a href="./detail.html">Quần jean</a></li>
+                      <li class="list-item"><a href="./detail.html">Đồ đan</a></li>
+                      <li class="list-item"><a href="./detail.html">Áo nỉ</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-list__item"><a class="list-name" href="./list.html">NƯỚC HOA</a>
+                    <ul>
+                      <li class="list-item"><a href="./detail.html">Áo cánh/Áo sơ mi</a></li>
+                      <li class="list-item"><a href="./detail.html">Túi xách &amp; Balo</a></li>
+                      <li class="list-item"><a href="./detail.html">Khăn quàng cổ và Foulards</a></li>
+                      <li class="list-item"><a href="./detail.html">Dệt kim Hats &amp; Gloves</a></li>
+                      <li class="list-item"><a href="./detail.html">Vớ và Socks</a></li>
+                      <li class="list-item"><a href="./detail.html">Jewerly</a></li>
+                      <li class="list-item"><a href="./detail.html">Bị bảo vệ</a></li>
+                      <li class="list-item"><a href="./detail.html">Giày</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-list__item"><a class="list-name" href="./list.html">TRANG SỨC</a>
+                    <ul>
+                      <li class="list-item"><a href="./detail.html">Áo cánh/Áo sơ mi</a></li>
+                      <li class="list-item"><a href="./detail.html">Túi xách &amp; Balo</a></li>
+                      <li class="list-item"><a href="./detail.html">Khăn quàng cổ và Foulards</a></li>
+                      <li class="list-item"><a href="./detail.html">Dệt kim Hats &amp; Gloves</a></li>
+                      <li class="list-item"><a href="./detail.html">Vớ và Socks</a></li>
+                      <li class="list-item"><a href="./detail.html">Jewerly</a></li>
+                      <li class="list-item"><a href="./detail.html">Bị bảo vệ</a></li>
+                      <li class="list-item"><a href="./detail.html">Giày</a></li>
+                    </ul>
+                  </div>
+                </div></a></li>
+            <li><a href="blog.html">TIN TỨC<i></i></a></li>
+            <li><a href="#">BẢN ĐỒ<i></i></a></li>
+            <li><a href="contact.html">LIÊN HỆ<i></i></a></li>
           </ul>
         </div>
-        <div class="nav-button"><i class="fas fa-shopping-cart"></i><i class="fas fa-search"></i></div>
+        <div class="nav__cart"><a href="./cart.html">
+            <div class="cart"><i class="fas fa-shopping-cart"></i>
+              <div class="number-cart"><span>0</span></div>
+            </div></a><a href="#"><i class="fas fa-search search"></i></a>
+          <div class="nav__cart__bar">
+            <input class="nav__cart__bar--checkbox" type="checkbox" id="menu-toggle">
+            <label for="menu-toggle"><i class="fas fa-bars bar"></i></label>
+            <div class="nav__cart__bar__menu">
+              <div class="bar-logo logo">
+                <div class="bar-logo--square logo-square"><a href="./index.html"><img class="logo-img" src="./assets/images/logo.png"></a></div>
+              </div>
+              <div class="bar-menu">
+                <ul>
+                  <li><a href="index.html">TRANG CHỦ</a></li>
+                  <li><a href="about.html">GIỚI THIỆU</a></li>
+                  <li class="dropdown"><a href="grid.html">SẢN PHẨM
+                      <div class="dropdown-list">
+                        <div class="dropdown-list__item"><a class="list-name" href="./list.html">DƯỠNG DA</a>
+                          <ul>
+                            <li class="list-item"><a href="./detail.html">Áo khoác</a></li>
+                            <li class="list-item"><a href="./detail.html">Bộ áo liền quần</a></li>
+                            <li class="list-item"><a href="./detail.html">Dresses</a></li>
+                            <li class="list-item"><a href="./detail.html">Quần/váy</a></li>
+                            <li class="list-item"><a href="./detail.html">Quần short</a></li>
+                            <li class="list-item"><a href="./detail.html">Quần jean</a></li>
+                            <li class="list-item"><a href="./detail.html">Đồ đan</a></li>
+                            <li class="list-item"><a href="./detail.html">Áo nỉ</a></li>
+                          </ul>
+                        </div>
+                        <div class="dropdown-list__item"><a class="list-name" href="./list.html">NƯỚC HOA</a>
+                          <ul>
+                            <li class="list-item"><a href="./detail.html">Áo cánh/Áo sơ mi</a></li>
+                            <li class="list-item"><a href="./detail.html">Túi xách &amp; Balo</a></li>
+                            <li class="list-item"><a href="./detail.html">Khăn quàng cổ và Foulards</a></li>
+                            <li class="list-item"><a href="./detail.html">Dệt kim Hats &amp; Gloves</a></li>
+                            <li class="list-item"><a href="./detail.html">Vớ và Socks</a></li>
+                            <li class="list-item"><a href="./detail.html">Jewerly</a></li>
+                            <li class="list-item"><a href="./detail.html">Bị bảo vệ</a></li>
+                            <li class="list-item"><a href="./detail.html">Giày</a></li>
+                          </ul>
+                        </div>
+                        <div class="dropdown-list__item"><a class="list-name" href="./list.html">TRANG SỨC</a>
+                          <ul>
+                            <li class="list-item"><a href="./detail.html">Áo cánh/Áo sơ mi</a></li>
+                            <li class="list-item"><a href="./detail.html">Túi xách &amp; Balo</a></li>
+                            <li class="list-item"><a href="./detail.html">Khăn quàng cổ và Foulards</a></li>
+                            <li class="list-item"><a href="./detail.html">Dệt kim Hats &amp; Gloves</a></li>
+                            <li class="list-item"><a href="./detail.html">Vớ và Socks</a></li>
+                            <li class="list-item"><a href="./detail.html">Jewerly</a></li>
+                            <li class="list-item"><a href="./detail.html">Bị bảo vệ</a></li>
+                            <li class="list-item"><a href="./detail.html">Giày</a></li>
+                          </ul>
+                        </div>
+                      </div></a></li>
+                  <li><a href="blog.html">TIN TỨC</a></li>
+                  <li><a href="#">BẢN ĐỒ</a></li>
+                  <li><a href="contact.html">LIÊN HỆ</a></li>
+                </ul>
+              </div>
+              <div class="bar-cart"><a href="./cart.html">
+                  <div class="cart"><i class="fas fa-shopping-cart"></i>
+                    <div class="number-cart"><span></span></div>
+                  </div></a><a href="#"><i class="fas fa-search search"></i></a></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -121,7 +225,7 @@
         <h3>THÔNG TIN</h3>
         <ul>
           <li><a href="./about_us.html">Về chúng tôi</a></li>
-          <li><a href="#">Điều khoản & điều kiện</a></li>
+          <li><a href="./404.html">Điều khoản & điều kiện</a></li>
           <li><a href="#">Chính sách riêng tư</a></li>
           <li><a href="#">Đặt và trả hàng</a></li>
         </ul>

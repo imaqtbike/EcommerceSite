@@ -1,0 +1,17 @@
+doctype html
+head
+    include abstracts/meta
+body
+    main
+        section.notfound
+            .notfound__content
+                .notfound__content__img
+                    img(src="./assets/images/notfound.png")
+                .notfound__content__notification
+                    h2 Đây không phải là trang web bạn đang tìm kiếm
+                    .notfound__content__notification__search
+                        input(type="text")
+                        i.fas.fa-search
+                .notfound__content__btn
+                    a.btn-contact(href="./contact.html") Liên hệ
+                    a.btn-home(href="./index.html") trang chủ

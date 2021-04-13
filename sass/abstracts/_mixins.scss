@@ -124,3 +124,30 @@
   font-weight: 500;
   padding: 2rem 0;
 }
+
+@mixin font-a($color, $font-size, $fw:700) {
+  color: $color;
+  font-size: $font-size;
+  font-weight: $fw;
+}
+
+@mixin button($background, $font-size, $pd, $color:$color-white) {
+  background: $background;
+  color: $color;
+  font-size: $font-size;
+  padding: $pd;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+@mixin tablet {
+  @media only screen and (min-width: #{$tablet-width}) and (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (min-width: 300px) and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
