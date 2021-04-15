@@ -62,3 +62,19 @@
     }
   }
   }
+
+.delete--cart {
+  cursor: pointer;
+  border: none;
+  height: 10px;
+  i {
+    font-size: 18px;
+  }
+}
+
+.delete--cart:active {
+  color: blue;
+}
+.delete--cart:focus {
+  color: red;
+}

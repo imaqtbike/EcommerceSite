@@ -6,7 +6,6 @@
       "name": "Mỹ phẩm châu Âu",
       "price": 395000,
       "oldPrice": "",
-      "disable": "disable",
       "img": "./assets/images/product5.jpg",
       "inCart": 1
     },
@@ -26,7 +25,6 @@
       "name": "Mỹ phẩm châu Âu",
       "price": 435000,
       "oldPrice": "",
-      "disable": "disable",
       "img": "./assets/images/product6.jpg",
       "inCart": 1
     },
@@ -36,7 +34,6 @@
       "name": "Mỹ phẩm châu Âu",
       "price": 350000,
       "oldPrice": "",
-      "disable": "disable",
       "img": "./assets/images/product1.jpg",
       "inCart": 1
     },
@@ -46,7 +43,6 @@
       "name": "Mỹ phẩm châu Âu",
       "price": 345000,
       "oldPrice": 450000,
-      "disable": "",
       "img": "./assets/images/product8.jpg",
       "inCart": 1
     },
@@ -56,7 +52,6 @@
       "name": "Mỹ phẩm châu Âu",
       "price": 335000,
       "oldPrice": "",
-      "disable": "disable",
       "img": "./assets/images/product7.jpg",
       "inCart": 1
     }

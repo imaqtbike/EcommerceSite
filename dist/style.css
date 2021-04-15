@@ -2681,6 +2681,19 @@ article .list__item:not(:last-child) img {
       .cart__content__btn button:hover {
         background-color: #789629; }
 
+.delete--cart {
+  cursor: pointer;
+  border: none;
+  height: 10px; }
+  .delete--cart i {
+    font-size: 18px; }
+
+.delete--cart:active {
+  color: blue; }
+
+.delete--cart:focus {
+  color: red; }
+
 .path__content #path__content--red {
   color: red; }
 

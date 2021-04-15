@@ -3,9 +3,10 @@ include ./home/mixin_home.pug
 include ./list/mixin_list.pug
 head
     include abstracts/meta
-    script(src='../js/grid.js' type='text/javascript')
 body.container
     include components/navigation
+    script(src="./grid.js")
+    script(src="./cart.js")
 section.path.grid__path
     .box
         .path__content
@@ -65,13 +66,6 @@ section.grid
                 .list__content
                     +listPagination
                     .grid__product
-                        - let title = ['OHUI', 'HOME', 'DEBORA','OHUI', 'HOME', 'DEBORA']
-                        - let classNames =['legacy-detail5','legacy-detail7','legacy-detail6','legacy-detail5','legacy-detail7','legacy-detail6']
-                        - let imgSource =['./assets/images/product5.jpg','./assets/images/product4.jpg','./assets/images/product6.jpg','./assets/images/product5.jpg','./assets/images/product4.jpg','./assets/images/product6.jpg']
-                        -for (let i = 0; i < title.length; i++)
-                        -for (let i = 0; i < classNames.length; i++)
-                        -for (let i = 0; i < imgSource.length; i++)
-                            +legacy(title[i],classNames[i], imgSource[i])
                     +listPagination
 footer.footer
     include layouts/footer
