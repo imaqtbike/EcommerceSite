@@ -1,15 +1,22 @@
 mixin tableDataCart(source,quantity,sum)
-    - if (quantity === '1') {sum = '345.000đ'} else {sum = '690.000đ'}
     tr
         td
             img(src=source)
         td Lắc tay D&G
         td
             span 345.000đ
-        td=quantity
+        td
+            input(class='product__quantity')(type='number')
         td
             span=sum
         td
             button.delete--item
                 i.far.fa-trash-alt
-                
+
+mixin TotalCart()
+    tr
+        td
+        td
+        td
+        td
+        td

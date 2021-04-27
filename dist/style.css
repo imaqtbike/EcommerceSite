@@ -2634,7 +2634,7 @@ article .list__item:not(:last-child) img {
 .cart__content {
   width: 100%; }
   .cart__content__title h1 {
-    font-size: 2.8rem;
+    font-size: 22px;
     color: #000;
     text-transform: uppercase;
     font-weight: 500;
@@ -2681,18 +2681,47 @@ article .list__item:not(:last-child) img {
       .cart__content__btn button:hover {
         background-color: #789629; }
 
-.delete--cart {
+.delete--item {
   cursor: pointer;
   border: none;
   height: 10px; }
-  .delete--cart i {
+  .delete--item i {
     font-size: 18px; }
 
-.delete--cart:active {
+.delete--item:active {
   color: blue; }
 
-.delete--cart:focus {
+.delete--item:focus {
   color: red; }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
+.product__quantity {
+  width: 27%;
+  height: 45px;
+  padding: 10px 10px; }
+
+.cart__content__title {
+  display: flex;
+  justify-content: space-between; }
+  .cart__content__title .total {
+    font-size: 22px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 2rem; }
+    .cart__content__title .total__value {
+      font-family: "Lobster", cursive;
+      font-size: 20px;
+      padding: 20px; }
 
 .path__content #path__content--red {
   color: red; }

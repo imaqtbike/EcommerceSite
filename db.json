@@ -15,7 +15,6 @@
       "name": "Mỹ phẩm châu Âu",
       "price": 335000,
       "oldPrice": 450000,
-      "disable": "",
       "img": "./assets/images/product4.jpg",
       "inCart": 1
     },
@@ -48,7 +47,7 @@
     },
     {
       "id": 6,
-      "productName": "TYFFANY",
+      "productName": "HKCosmetic",
       "name": "Mỹ phẩm châu Âu",
       "price": 335000,
       "oldPrice": "",

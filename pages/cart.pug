@@ -4,8 +4,6 @@ head
     include abstracts/meta
 body.container
     include components/navigation
-    script(src="./grid.js")
-    script(src="./cart.js")
 section.section__detail--path
     .box
         .path__content
@@ -23,17 +21,25 @@ section
     .box
         .cart__content
             .cart__content__title
-                h1 Giỏ hàng
+                .title
+                    h1 Giỏ hàng
+                .total
+                    h2 Thành tiền:
+                        span.total__value
             .cart__content__table
-                table
-                    tr
-                        each val in ['Ảnh', 'tên sản phẩm', 'giá','số lượng', 'tổng số','xóa']
-                            th=val
-                    +tableDataCart('./assets/images/product.jpg','1')
-                    +tableDataCart('./assets/images/product.jpg','2')
+                table.cart__table
+                    thead
+                        tr
+                            each val in ['Ảnh', 'tên sản phẩm', 'giá','số lượng', 'tổng số','xóa']
+                                th=val
+                    tbody.table__body
+                    //-+tableDataCart('./assets/images/product.jpg','1')
+                    //-+tableDataCart('./assets/images/product.jpg','2')/
             .cart__content__btn
                 button.buying(type="button") Tiếp tục mua hàng
                 button.delete(type="button") Xóa
-                button.payment(type="button") Thanh toán 
+                button.payment(type="button") Thanh toán
+script(src="./grid.js")
+script(src="./cart.js")
 footer.footer
     include layouts/footer

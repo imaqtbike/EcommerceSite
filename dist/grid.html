@@ -76,7 +76,7 @@
         </div>
         <div class="nav__cart"><a href="./cart.html">
             <div class="cart"><i class="fas fa-shopping-cart"></i>
-              <div class="number-cart"><span>0</span></div>
+              <div class="number-cart"><span class="cart__value">0</span></div>
             </div></a><a href="#"><i class="fas fa-search search"></i></a>
           <div class="nav__cart__bar">
             <input class="nav__cart__bar--checkbox" type="checkbox" id="menu-toggle">
@@ -143,108 +143,106 @@
       </div>
     </div>
   </header>
-  <script src="./grid.js"></script>
-  <script src="./cart.js"></script>
-</body>
-<section class="path grid__path">
-  <div class="box">
-    <div class="path__content">
-      <ul>
-        <li><a href="#">Home</a><i class="fas fa-angle-right"></i></li>
-        <li><a href="#">Trang sức</a></li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="advertisement">
-  <div class="box">
-    <div class="content">
-      <h1>Giảm giá 50%</h1>
-      <div class="content__time">
-        <h4>trong vòng 3 ngày</h4>
-        <p>( 25/5 - 28/5/2015 )</p>
+  <section class="path grid__path">
+    <div class="box">
+      <div class="path__content">
+        <ul>
+          <li><a href="#">Home</a><i class="fas fa-angle-right"></i></li>
+          <li><a href="#">Trang sức</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
-<section class="grid">
-  <div class="box">
-    <div class="product__list">
-      <aside>
-        <div class="categories">
-          <div class="categories__content">
-            <div class="title border-solid"><i class="fas fa-bars"></i>
-              <h1>DANH MỤC SẢN PHẨM</h1>
-            </div>
-            <div class="cosmetics border-dotted">
-              <h2>MỸ PHẨM</h2><i class="fas fa-caret-right"></i>
-            </div>
-            <div class="jewelry border-dotted">
-              <div class="jewelry__title">
-                <h2>TRANG SỨC</h2><i class="fas fa-caret-down"></i>
-              </div>
-              <ul>
-                <li>Vòng tay</li>
-                <li>Nhẫn</li>
-                <li>Lắc chân</li>
-                <li>Phụ kiện khác</li>
-                <li>Giày lười - Giày mọi</li>
-              </ul>
-            </div>
-            <div class="accessories border-dotted">
-              <h2>PHỤ KIỆN</h2><i class="fas fa-caret-right"></i>
-            </div>
-            <div class="perfume border-dotted">
-              <h2>NƯỚC HOA</h2><i class="fas fa-caret-right"></i>
-            </div>
-          </div>
-          <div class="categories__comparison">
-            <h1 class="title border-solid">so sánh sản phẩm</h1>
-            <p>  Bạn chưa có sản phẩm nào để so sánh</p>
-          </div>
-          <div class="categories__tag">
-            <h1 class="title border-solid">tag sản phẩm</h1>
-            <div class="categories__tag__btn">
-              <button type="button">Hoa tai</button>
-              <button type="button">Son</button>
-              <button type="button">Nước hoa</button>
-              <button type="button">Giày</button>
-              <button type="button">Sandal</button>
-              <button type="button">Áo sơ mi</button>
-              <button type="button">Nước hoa</button>
-              <button type="button">Trẻ em</button>
-              <button type="button">Thời trang nữ</button>
-            </div>
-            <div class="categories__img"><img src="./assets/images/mandala-store.jpg"></div>
-          </div>
+  </section>
+  <section class="advertisement">
+    <div class="box">
+      <div class="content">
+        <h1>Giảm giá 50%</h1>
+        <div class="content__time">
+          <h4>trong vòng 3 ngày</h4>
+          <p>( 25/5 - 28/5/2015 )</p>
         </div>
-      </aside>
-      <article>
-        <div class="list__content">
-          <div class="list__content__pagination">
-            <div class="pagination">
-              <div class="pagination__list">
-                <div class="pagination__list__horizontal"><a href="./grid.html"><i class="fas fa-th-large"></i></a></div>
-                <div class="pagination__list__vertical"><a href="./list.html"><i class="fas fa-list"></i></a></div>
-              </div>
-              <div class="pagination__number"><i class="fas fa-caret-left"></i><span class="active">1</span><span>2</span><span>3</span><i class="fas fa-caret-right"></i></div>
-            </div>
-          </div>
-          <div class="grid__product"></div>
-          <div class="list__content__pagination">
-            <div class="pagination">
-              <div class="pagination__list">
-                <div class="pagination__list__horizontal"><a href="./grid.html"><i class="fas fa-th-large"></i></a></div>
-                <div class="pagination__list__vertical"><a href="./list.html"><i class="fas fa-list"></i></a></div>
-              </div>
-              <div class="pagination__number"><i class="fas fa-caret-left"></i><span class="active">1</span><span>2</span><span>3</span><i class="fas fa-caret-right"></i></div>
-            </div>
-          </div>
-        </div>
-      </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+  <section class="grid">
+    <div class="box">
+      <div class="product__list">
+        <aside>
+          <div class="categories">
+            <div class="categories__content">
+              <div class="title border-solid"><i class="fas fa-bars"></i>
+                <h1>DANH MỤC SẢN PHẨM</h1>
+              </div>
+              <div class="cosmetics border-dotted">
+                <h2></h2>MỸ PHẨM<i class="fas fa-caret-right"></i>
+              </div>
+              <div class="jewelry border-dotted">
+                <div class="jewelry__title">
+                  <h2></h2>TRANG SỨC<i class="fas fa-caret-down"></i>
+                </div>
+                <ul>
+                  <li>Vòng tay</li>
+                  <li>Nhẫn</li>
+                  <li>Lắc chân</li>
+                  <li>Phụ kiện khác</li>
+                  <li>Giày lười - Giày mọi</li>
+                </ul>
+              </div>
+              <div class="accessories border-dotted">
+                <h2>PHỤ KIỆN</h2><i class="fas fa-caret-right"></i>
+              </div>
+              <div class="perfume border-dotted">
+                <h2>NƯỚC HOA</h2><i class="fas fa-caret-right"></i>
+              </div>
+            </div>
+            <div class="categories__comparison">
+              <h1 class="title border-solid">so sánh sản phẩm</h1>
+              <p>  Bạn chưa có sản phẩm nào để so sánh</p>
+            </div>
+            <div class="categories__tag">
+              <h1 class="title border-solid">tag sản phẩm</h1>
+              <div class="categories__tag__btn">
+                <button type="button">Hoa tai</button>
+                <button type="button">Son</button>
+                <button type="button">Nước hoa</button>
+                <button type="button">Giày</button>
+                <button type="button">Sandal</button>
+                <button type="button">Áo sơ mi</button>
+                <button type="button">Nước hoa</button>
+                <button type="button">Trẻ em</button>
+                <button type="button">Thời trang nữ</button>
+              </div>
+              <div class="categories__img"><img src="./assets/images/mandala-store.jpg"></div>
+            </div>
+          </div>
+        </aside>
+        <article>
+          <div class="list__content">
+            <div class="list__content__pagination">
+              <div class="pagination">
+                <div class="pagination__list">
+                  <div class="pagination__list__horizontal"><a href="./grid.html"><i class="fas fa-th-large"></i></a></div>
+                  <div class="pagination__list__vertical"><a href="./list.html"><i class="fas fa-list"></i></a></div>
+                </div>
+                <div class="pagination__number"><i class="fas fa-caret-left"></i><span class="active">1</span><span>2</span><span>3</span><i class="fas fa-caret-right"></i></div>
+              </div>
+            </div>
+            <div class="grid__product"></div>
+            <div class="list__content__pagination">
+              <div class="pagination">
+                <div class="pagination__list">
+                  <div class="pagination__list__horizontal"><a href="./grid.html"><i class="fas fa-th-large"></i></a></div>
+                  <div class="pagination__list__vertical"><a href="./list.html"><i class="fas fa-list"></i></a></div>
+                </div>
+                <div class="pagination__number"><i class="fas fa-caret-left"></i><span class="active">1</span><span>2</span><span>3</span><i class="fas fa-caret-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</body>
 <footer class="footer">
   <div class="box">
     <div class="footer__content">
@@ -315,3 +313,5 @@
     </div>
   </div>
 </footer>
+<script src="./grid.js"></script>
+<script src="./cart.js"></script>
