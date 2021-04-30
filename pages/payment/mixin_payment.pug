@@ -10,3 +10,11 @@ mixin customer(title, className)
             span
 
 - let listTableCustomer =  ["Ảnh", "Tên Sản Phẩm", "Giá", "Số Lượng", "Tổng Số"];
+
+mixin form-group(label, type, idInput, name, idError)
+    .form-group
+        label= label
+        input(id=idInput name=name type=type)
+        i.fas.fa-check-circle
+        i.fas.fa-exclamation-circle
+        .error-message(id=idError)

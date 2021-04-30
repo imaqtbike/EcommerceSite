@@ -144,13 +144,12 @@
     </div>
   </header>
 </body>
-<section class="section__detail--path">
+<section class="path blog__path">
   <div class="box">
     <div class="path__content">
       <ul>
         <li><a href="#">Home</a><i class="fas fa-angle-right"></i></li>
-        <li><a href="#">Sản phẩm</a><i class="fas fa-angle-right"></i></li>
-        <li><a href="#">Trang sức</a><i class="fas fa-angle-right"></i></li>
+        <li><a href="#">Thông tin thanh toán</a></li>
       </ul>
     </div>
   </div>
@@ -158,44 +157,49 @@
 <div class="box">
   <div class="process">
     <div class="progressbar">
-      <div class="page-cart"><span>Step 1: Giỏ hàng</span></div>
+      <div class="page-information"><span>Step 2: Thông tin khách hàng</span></div>
     </div>
   </div>
 </div>
 <section>
-  <div class="box">
-    <div class="cart__content">
-      <div class="cart__content__title">
-        <h1>Giỏ hàng</h1>
-      </div>
-      <div class="cart__content__table">
-        <table class="cart__table">
-          <thead>
-            <tr>
-              <th>Ảnh</th>
-              <th>tên sản phẩm</th>
-              <th>giá</th>
-              <th>số lượng</th>
-              <th>tổng số</th>
-              <th>xóa</th>
-            </tr>
-          </thead>
-          <tbody class="table__body"></tbody>
-        </table>
-      </div>
-      <div class="cart__content__total">
-        <h4>TỔNG CỘNG:</h4><span class="total__value"></span>
-      </div>
-      <div class="cart__content__btn">
-        <button class="buying" type="button">Tiếp tục mua hàng</button>
-        <button class="delete" type="button">Xóa</button><a href="./infomation.html">
-          <button class="payment" type="button">Thanh toán</button></a>
+  <div class="information-checkout">
+    <div class="box">
+      <div class="information-checkout__content">
+        <div class="information-checkout__content__title title-content">
+          <h1>THÔNG TIN THANH TOÁN</h1>
+        </div>
+        <div class="information-checkout__content__form form">
+          <form id="formCheckout" name="inforForm" action="#">
+            <div class="form-group">
+              <label>Họ và Tên *</label>
+              <input id="infor-receiver" name="receiver" type="text"><i class="fas fa-check-circle"></i><i class="fas fa-exclamation-circle"></i>
+              <div class="error-message" id="err-receiver"></div>
+            </div>
+            <div class="form-group">
+              <label>Địa chỉ *</label>
+              <input id="infor-address" name="address" type="text"><i class="fas fa-check-circle"></i><i class="fas fa-exclamation-circle"></i>
+              <div class="error-message" id="err-address"></div>
+            </div>
+            <div class="form-group">
+              <label>Email *</label>
+              <input id="infor-email" name="email" type="text"><i class="fas fa-check-circle"></i><i class="fas fa-exclamation-circle"></i>
+              <div class="error-message" id="err-email"></div>
+            </div>
+            <div class="form-group">
+              <label>Số điện thoại *</label>
+              <input id="infor-phone" name="phone" type="telephone"><i class="fas fa-check-circle"></i><i class="fas fa-exclamation-circle"></i>
+              <div class="error-message" id="err-phone"></div>
+            </div>
+            <div class="information-checkout__form__btn btn-form"><a href="cart.html">Quay lại giỏ hàng</a>
+              <button>Tiếp tục</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<script src="./grid.js"></script>
-<script src="./cart.js"></script>
+<script src="./infomation.js"></script>
 <footer class="footer">
   <div class="box">
     <div class="footer__content">

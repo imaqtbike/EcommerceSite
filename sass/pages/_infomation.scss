@@ -1,0 +1,118 @@
+.process {
+  .page-information {
+    width: 66.66%;
+    background-color: #789629;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    span {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      position: absolute;
+      margin-right: 20px;
+    }
+    }
+  }
+
+.information-checkout {
+  &__content {
+    width: 100%;
+    margin-bottom: 80px;
+    .title-content {
+      margin: 20px 0;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    &__form {
+      width: 100%;
+      background: #f2f2f2;
+      border: 1px solid #e8e8e8;
+      #formCheckout {
+        width: 60%;
+        margin: 0 auto;
+        padding: 30px 50px;
+        .form-group {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          label {
+            color: #000;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 5px
+          }
+          input {
+            padding: 10px 15px;
+            margin-bottom: 5px;
+            border: none;
+            outline: none
+          }
+          i {
+            position: absolute;
+            top: 32px;
+            right: 10px;
+            visibility: hidden;
+            margin-right: 10px;
+            font-weight: 900;
+          }
+          .error-message {
+            margin-top: 2px;
+            font-style: italic;
+            color: #e74c3c;
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+        .btn-form {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-evenly;
+          a,button {
+            background: #000;
+            color: #fff;
+            font-size: 12px;
+            padding: 5px 10px;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+        }
+      }
+    }
+  }
+
+#formCheckout {
+  .success {
+    input {
+      border: 2px solid #2ecc71 !important;
+    }
+  }
+   .error {
+    input {
+      border: 2px solid #e74c3c !important;
+    }
+  }
+}
+
+#formCheckout {
+  .success {
+    .fa-exclamation-circle {
+      color: #2ecc71 !important;
+      visibility: visible !important;
+    }
+  }
+  .error {
+    .fa-exclamation-circle {
+      color: #e74c3c !important;
+      visibility: visible !important;
+    }
+  }
+}

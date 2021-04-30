@@ -3082,3 +3082,91 @@ main {
       top: -7rem; }
       .newsletter__content__icon img {
         cursor: pointer; }
+
+.process .page-information {
+  width: 66.66%;
+  background-color: #789629;
+  height: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .process .page-information span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    margin-right: 20px; }
+
+.information-checkout__content {
+  width: 100%;
+  margin-bottom: 80px; }
+  .information-checkout__content .title-content {
+    margin: 20px 0; }
+  .information-checkout__content h1 {
+    font-size: 28px; }
+  .information-checkout__content__form {
+    width: 100%;
+    background: #f2f2f2;
+    border: 1px solid #e8e8e8; }
+    .information-checkout__content__form #formCheckout {
+      width: 60%;
+      margin: 0 auto;
+      padding: 30px 50px; }
+      .information-checkout__content__form #formCheckout .form-group {
+        display: flex;
+        flex-direction: column;
+        position: relative; }
+        .information-checkout__content__form #formCheckout .form-group label {
+          color: #000;
+          font-size: 12px;
+          font-weight: 600;
+          margin-bottom: 5px; }
+        .information-checkout__content__form #formCheckout .form-group input {
+          padding: 10px 15px;
+          margin-bottom: 5px;
+          border: none;
+          outline: none; }
+        .information-checkout__content__form #formCheckout .form-group i {
+          position: absolute;
+          top: 32px;
+          right: 10px;
+          visibility: hidden;
+          margin-right: 10px;
+          font-weight: 900; }
+        .information-checkout__content__form #formCheckout .form-group .error-message {
+          margin-top: 2px;
+          font-style: italic;
+          color: #e74c3c;
+          font-size: 14px;
+          margin-bottom: 10px; }
+      .information-checkout__content__form #formCheckout .btn-form {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-evenly; }
+        .information-checkout__content__form #formCheckout .btn-form a, .information-checkout__content__form #formCheckout .btn-form button {
+          background: #000;
+          color: #fff;
+          font-size: 12px;
+          padding: 5px 10px;
+          outline: none;
+          cursor: pointer;
+          border: none;
+          text-decoration: none;
+          text-transform: uppercase; }
+
+#formCheckout .success input {
+  border: 2px solid #2ecc71 !important; }
+
+#formCheckout .error input {
+  border: 2px solid #e74c3c !important; }
+
+#formCheckout .success .fa-exclamation-circle {
+  color: #2ecc71 !important;
+  visibility: visible !important; }
+
+#formCheckout .error .fa-exclamation-circle {
+  color: #e74c3c !important;
+  visibility: visible !important; }
+
