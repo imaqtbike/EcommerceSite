@@ -1,5 +1,7 @@
 doctype html
 include ./cart/mixin_cart
+include ./payment/mixin_payment.pug
+    
 head
     include abstracts/meta
 body.container
@@ -17,15 +19,13 @@ section.section__detail--path
                 li
                     a(href='#') Trang sức
                     i.fas.fa-angle-right
+.box
+    +process("page-cart", "Step 1: Giỏ hàng")
 section
     .box
         .cart__content
             .cart__content__title
-                .title
                     h1 Giỏ hàng
-                .total
-                    h2 Thành tiền:
-                        span.total__value
             .cart__content__table
                 table.cart__table
                     thead
@@ -33,12 +33,14 @@ section
                             each val in ['Ảnh', 'tên sản phẩm', 'giá','số lượng', 'tổng số','xóa']
                                 th=val
                     tbody.table__body
-                    //-+tableDataCart('./assets/images/product.jpg','1')
-                    //-+tableDataCart('./assets/images/product.jpg','2')/
+            .cart__content__total
+                h4 TỔNG CỘNG:
+                span.total__value
             .cart__content__btn
                 button.buying(type="button") Tiếp tục mua hàng
                 button.delete(type="button") Xóa
-                button.payment(type="button") Thanh toán
+                a(href='./payment.html')
+                    button.payment(type="button") Thanh toán
 script(src="./grid.js")
 script(src="./cart.js")
 footer.footer

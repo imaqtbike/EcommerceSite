@@ -144,13 +144,12 @@
     </div>
   </header>
 </body>
-<section class="section__detail--path">
+<section class="path blog__path">
   <div class="box">
     <div class="path__content">
       <ul>
         <li><a href="#">Home</a><i class="fas fa-angle-right"></i></li>
-        <li><a href="#">Sản phẩm</a><i class="fas fa-angle-right"></i></li>
-        <li><a href="#">Trang sức</a><i class="fas fa-angle-right"></i></li>
+        <li><a href="#">Blog</a></li>
       </ul>
     </div>
   </div>
@@ -158,44 +157,56 @@
 <div class="box">
   <div class="process">
     <div class="progressbar">
-      <div class="page-cart"><span>Step 1: Giỏ hàng</span></div>
+      <div class="page-payment"><span>Step 3: Hoàn thành thanh toán</span></div>
     </div>
   </div>
 </div>
 <section>
-  <div class="box">
-    <div class="cart__content">
-      <div class="cart__content__title">
-        <h1>Giỏ hàng</h1>
-      </div>
-      <div class="cart__content__table">
-        <table class="cart__table">
-          <thead>
-            <tr>
-              <th>Ảnh</th>
-              <th>tên sản phẩm</th>
-              <th>giá</th>
-              <th>số lượng</th>
-              <th>tổng số</th>
-              <th>xóa</th>
-            </tr>
-          </thead>
-          <tbody class="table__body"></tbody>
-        </table>
-      </div>
-      <div class="cart__content__total">
-        <h4>TỔNG CỘNG:</h4><span class="total__value"></span>
-      </div>
-      <div class="cart__content__btn">
-        <button class="buying" type="button">Tiếp tục mua hàng</button>
-        <button class="delete" type="button">Xóa</button><a href="./payment.html">
-          <button class="payment" type="button">Thanh toán</button></a>
+  <div class="payment-complete">
+    <div class="box">
+      <div class="payment-complete__content">
+        <div class="payment-complete__content__title title-content">
+          <h1>hoàn thành thanh toán</h1>
+        </div>
+        <div class="payment-complete__content__info">
+          <div class="payment-complete__content__info__customer">
+            <h4>THÔNG TIN KHÁCH HÀNG</h4>
+            <div class="customer-item">
+              <p class="customer-receiver">Người nhận:<span></span></p>
+            </div>
+            <div class="customer-item">
+              <p class="customer-address">Địa chỉ:<span></span></p>
+            </div>
+            <div class="customer-item">
+              <p class="customer-email">Email:<span></span></p>
+            </div>
+            <div class="customer-item">
+              <p class="customer-phone">Số điện thoại:<span></span></p>
+            </div>
+          </div>
+          <div class="payment-complete__content__info__product">
+            <table>
+              <tr>
+                <th>Ảnh</th>
+                <th>Tên Sản Phẩm</th>
+                <th>Giá</th>
+                <th>Số Lượng</th>
+                <th>Tổng Số</th>
+              </tr>
+            </table>
+            <div class="payment-complete__content__info__product__total">
+              <h4>TỔNG CỘNG:</h4><span class="price"></span>
+            </div>
+            <div class="payment-complete__content__info__product__btn">
+              <button class="back-info" type="button" onclick="onBackInforPage()">Quay lại trang thông tin</button>
+              <button class="checkout" type="button" onclick="onCheckout()">Thanh toán </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<script src="./grid.js"></script>
-<script src="./cart.js"></script>
 <footer class="footer">
   <div class="box">
     <div class="footer__content">

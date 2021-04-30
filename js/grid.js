@@ -1,10 +1,11 @@
 "use strict";
 const productGrid = document.querySelector('.grid__product');
+let productCart = document.querySelector('.cart__content')
 let products = [];
 eventListeners();
 
 //all event listeners
-function eventListeners() {
+function eventListeners() { 
     window.addEventListener('DOMContentLoaded', () => {
         loadJSON();
         loadCart();

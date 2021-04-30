@@ -1,0 +1,43 @@
+doctype html
+include ./payment/mixin_payment.pug
+head
+    include abstracts/meta
+body.container
+    include components/navigation
+section.path.blog__path
+    .box
+        .path__content
+            ul
+                li
+                    a(href='#') Home
+                    i.fas.fa-angle-right
+                li
+                    a(href='#') Blog
+.box
+    +process("page-payment", "Step 3: Hoàn thành thanh toán")
+section
+    .payment-complete
+        .box
+            .payment-complete__content
+                .payment-complete__content__title.title-content
+                    h1 hoàn thành thanh toán
+                .payment-complete__content__info
+                    .payment-complete__content__info__customer
+                        h4 THÔNG TIN KHÁCH HÀNG
+                        +customer("Người nhận:", "customer-receiver")
+                        +customer("Địa chỉ:", "customer-address")
+                        +customer("Email:", "customer-email")
+                        +customer("Số điện thoại:", "customer-phone")
+                    .payment-complete__content__info__product
+                        table
+                            tr
+                                each item in ["Ảnh", "Tên Sản Phẩm", "Giá", "Số Lượng", "Tổng Số"]
+                                    th= item
+                        .payment-complete__content__info__product__total
+                            h4 TỔNG CỘNG:
+                            span.price
+                        .payment-complete__content__info__product__btn
+                            button.back-info(type="button" onclick="onBackInforPage()") Quay lại trang thông tin
+                            button.checkout(type="button" onclick="onCheckout()") Thanh toán 
+footer.footer
+    include layouts/footer

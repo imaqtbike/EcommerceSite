@@ -1,0 +1,12 @@
+mixin process(className, name)
+    .process
+        .progressbar
+            div(class=className)
+                span= name
+                
+mixin customer(title, className)
+    .customer-item
+        p(class=className)= title
+            span
+
+- let listTableCustomer =  ["Ảnh", "Tên Sản Phẩm", "Giá", "Số Lượng", "Tổng Số"];

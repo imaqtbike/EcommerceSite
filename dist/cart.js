@@ -6,7 +6,16 @@ const totalValue = document.querySelector('.total__value');
 
 
 function loadCart() {
-    let products = JSON.parse(localStorage.getItem('products'));
+    let products = JSON.parse(localStorage.getItem('products')) || [];
+    if (products.length === 0) {
+        let process = document.querySelector('.process')
+        process.innerHTML = '';
+        let cartContent = document.querySelector('.cart__content');
+        cartContent.innerHTML = `<div class="cart__content__nothing">
+        <h1>Chưa có sản phẩm nào</h1>
+        <a href="./grid.html">MUA SẮM</a>
+    </div>`;
+    }
     let cartTotalItem = document.querySelector('.cart__value');
     cartTotalItem.textContent = products.length;
     products.forEach((product, index) => {
