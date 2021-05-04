@@ -186,20 +186,23 @@
           </div>
           <div class="payment-complete__content__info__product">
             <table>
-              <tr>
-                <th>Ảnh</th>
-                <th>Tên Sản Phẩm</th>
-                <th>Giá</th>
-                <th>Số Lượng</th>
-                <th>Tổng Số</th>
-              </tr>
+              <thead class="table__head">
+                <tr>
+                  <th>Ảnh</th>
+                  <th>Tên Sản Phẩm</th>
+                  <th>Giá</th>
+                  <th>Số Lượng</th>
+                  <th>Tổng Số</th>
+                </tr>
+              </thead>
+              <tbody class="table__body"></tbody>
             </table>
             <div class="payment-complete__content__info__product__total">
-              <h4>TỔNG CỘNG:</h4><span class="price"></span>
+              <h4>TỔNG CỘNG:</h4><span class="total__value"></span>
             </div>
             <div class="payment-complete__content__info__product__btn">
-              <button class="back-info" type="button" onclick="onBackInforPage()">Quay lại trang thông tin</button>
-              <button class="checkout" type="button" onclick="onCheckout()">Thanh toán </button>
+              <button class="back-info" type="button" onclick="onBackInforPage()">Quay lại</button>
+              <button class="checkout" type="button" onclick="onCheckout()">Thanh toán</button>
             </div>
           </div>
         </div>
@@ -207,6 +210,8 @@
     </div>
   </div>
 </section>
+<script src="./cart.js"></script>
+<script src="./payment.js"></script>
 <footer class="footer">
   <div class="box">
     <div class="footer__content">

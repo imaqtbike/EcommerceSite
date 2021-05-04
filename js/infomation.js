@@ -9,9 +9,7 @@ let errReceiver = document.getElementById("err-receiver"),
     errPhone = document.getElementById("err-phone");
 
 form.addEventListener("submit", function (e) {
-    console.log("e", e);
     e.preventDefault();
-
     checkInputs();
 });
 

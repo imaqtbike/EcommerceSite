@@ -30,14 +30,18 @@ section
                         +customer("Số điện thoại:", "customer-phone")
                     .payment-complete__content__info__product
                         table
-                            tr
-                                each item in ["Ảnh", "Tên Sản Phẩm", "Giá", "Số Lượng", "Tổng Số"]
-                                    th= item
+                            thead.table__head
+                                tr
+                                    each item in ["Ảnh", "Tên Sản Phẩm", "Giá", "Số Lượng", "Tổng Số"]
+                                        th= item
+                            tbody.table__body
                         .payment-complete__content__info__product__total
                             h4 TỔNG CỘNG:
-                            span.price
+                            span.total__value
                         .payment-complete__content__info__product__btn
-                            button.back-info(type="button" onclick="onBackInforPage()") Quay lại trang thông tin
-                            button.checkout(type="button" onclick="onCheckout()") Thanh toán 
+                            button.back-info(type="button" onclick="onBackInforPage()") Quay lại
+                            button.checkout(type="button" onclick="onCheckout()") Thanh toán
+script(src="./cart.js")
+script(src="./payment.js")
 footer.footer
     include layouts/footer

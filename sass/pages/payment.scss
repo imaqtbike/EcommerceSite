@@ -1,0 +1,147 @@
+.process {
+  .page-payment {
+    background-color: #789629;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    span {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      position: absolute;
+      margin-right: 20px;
+    }
+  }
+}
+
+.payment-complete__content {
+  width: 100%;
+  margin-bottom: 80px;
+
+  h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 20px 0;
+  }
+
+  &__info {
+    display: flex;
+
+    &__customer {
+      width: 25%;
+      max-height: 183px;
+      background: #e6e6e6f2;
+      padding: 10px;
+      overflow: hidden;
+
+      h4 {
+        margin-top: 10px;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .customer-item {
+        margin: 10px 0;
+        padding-left: 10px;
+
+        p {
+          font-size: 12px;
+
+          span {
+            font-weight: 600;
+            font-family: "Roboto Slab", serif;
+            margin-left: 15px;
+            color: #789629;
+          }
+        }
+      }
+    }
+
+    &__product {
+      width: 75%;
+      padding-left: 20px;
+
+      table {
+        border: 1px solid rgba(134, 134, 134, 0.490196);
+        border-collapse: collapse;
+        text-align: center;
+        width: 100%;
+      }
+
+      &__total {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+
+        h4 {
+          margin-right: 20px;
+          font-weight: 625;
+        }
+
+        span {
+          font-size: 20px;
+          letter-spacing: 0.15rem;
+          margin-right: 10px;
+          font-family: "Lobster", cursive;
+          position: relative;
+          color: #789629;
+          font-weight: 500
+        }
+      }
+
+      &__btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+        button {
+          background: #000;
+          color: #fff;
+          font-size: 12px;
+          padding: 5px 15px;
+          outline: none;
+          cursor: pointer;
+          border: none;
+          text-decoration: none;
+          text-transform: uppercase;
+          margin-left: 10px
+        }
+      }
+    }
+  }
+}
+
+.table__body {
+  tr {
+    td {
+      font-size: 1.3rem;
+      padding: 1.5rem 0;
+      border: 0.1rem solid #e8e8e8;
+      border-collapse: collapse;
+      text-align: center;
+      vertical-align: middle
+    }
+
+    .cart-price, .cart-total-value {
+      font-family: "Lobster", cursive;
+      font-size: 1.6rem
+    }
+  }
+}
+
+.table__head {
+  tr {
+    th {
+      background-color: #fafafa;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight: 400;
+      padding: 0.5rem 0;
+    }
+  }
+}
+
