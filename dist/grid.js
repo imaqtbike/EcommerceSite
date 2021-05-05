@@ -1,28 +1,27 @@
 "use strict";
 const productGrid = document.querySelector('.grid__product');
-let productCart = document.querySelector('.cart__content')
+let productCart = document.querySelector('.cart__content');
 let products = [];
 eventListeners();
 
 //all event listeners
-function eventListeners() { 
+function eventListeners() {
     window.addEventListener('DOMContentLoaded', () => {
-        loadJSON();
         loadCart();
     });
     productGrid.addEventListener('click', purchaseProduct);
 }
 
 //load json file into grid display
-function loadJSON() {
-    fetch('http://localhost:3000/products').then(response => {
+function showProducts(link) {
+    fetch(link).then(response => {
         response.json().then(data => {
-            let html = '';                  
+            let html = '';
             data.forEach(product => {
                 html += `<div class="legacy__items__detail" '><img class='product__img' src="${product.img}" alt="OHUI">
                     <div class="legacy__items__detail__content legacy-content">
                     <h4 class='product__name'>${product.productName}</h4><a href="">
-                    <p class='product__category'>${product.name}</p></a><span class="price">${product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}<small>vnd</small></span>
+                    <p class='product__category'>${product.name}</p></a><span class="price">${product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}<small>vnd</small></span>
                     </div>
                     <div class="legacy__items__detail__icon">
                     <div class="legacy-cta">
@@ -32,7 +31,7 @@ function loadJSON() {
                     </div>
                     </div>`;
             });
-             productGrid.innerHTML = html;
+            productGrid.innerHTML = html;
         });
     });
 }
@@ -59,21 +58,31 @@ function getProductInfo(product) {
 }
 
 function pushItemInArray(item) {
+    let notification = document.querySelector('.notification');
     if (products.length === 0) {
         products.push(item);
-        alert(`Đã thêm thành công sản phẩm vào giỏ hàng!`)
+        notification.classList.add('success');
         localStorage.setItem('products', JSON.stringify(products));
+        setTimeout(function () {
+            notification.classList.remove('success')
+        }, 2000)
         return;
     }
     for (let i = 0; i <= products.length; i++) {
         if (products[i].name === item.name) {
             products[i].count++;
-            localStorage.setItem('products', JSON.stringify(products));
+            notification.classList.add('success');
+            setTimeout(function () {
+                notification.classList.remove('success')
+            }, 2000)
             return;
         } else if (i === products.length - 1) {
             products.push(item);
-            alert(`Đã thêm thành công sản phẩm vào giỏ hàng!`)
+            notification.classList.add('success');
             localStorage.setItem('products', JSON.stringify(products));
+            setTimeout(function () {
+                notification.classList.remove('success')
+            }, 3000)
             return;
         }
     }

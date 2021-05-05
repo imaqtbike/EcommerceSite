@@ -8,30 +8,29 @@ const totalValue = document.querySelector('.total__value');
 function loadCart() {
     let products = JSON.parse(localStorage.getItem('products')) || [];
     if (products.length === 0) {
-        let process = document.querySelector('.process')
+        let process = document.querySelector('.process');
         process.innerHTML = '';
         let cartContent = document.querySelector('.cart__content');
         cartContent.innerHTML = `<div class="cart__content__nothing">
         <h1>Chưa có sản phẩm nào</h1>
         <a href="./grid.html">MUA SẮM</a>
-    </div>`;
+                    </div>`;
     }
     let cartTotalItem = document.querySelector('.cart__value');
     cartTotalItem.textContent = products.length;
     products.forEach((product, index) => {
         let cartItem = document.createElement('tr');
         cartItem.className = 'cart-item';
+        cartItem.id = `${index}`
         cartItem.innerHTML = `<td><img src="${product.imgSrc}" alt='product image'></td>
                   <td>${product.name}</td>
-                  <td><span class='cart-price'>${product.price}.000 vnd</span></td>
+                  <td><span class='cart-price'>${product.price}.000<small>vnd</small></span></td>
                   <td>
                     <button data-action="remove" id="btn-remove">-</button>
                     <input name='product' class="product__quantity" id='product__quantity-${index}' type="number" min='1' max='100' value='${product.count}'>
                     <button data-action="add" id='btn-add'>+</button>
                   </td>
-                  <td><span class='cart-total-value'>${(parseInt(product.price) * product.count)
-            .toString()
-            .replace(/\B(?=(\d{3})+(?!\d))/g, ".")}.000 vnd
+                  <td><span class='cart-total-value'>${(parseInt(product.price) * product.count).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}.000 vnd
                   </span></td>
                   <td>
                     <button class="delete--item"><i class="far fa-trash-alt"></i></button>
@@ -40,6 +39,7 @@ function loadCart() {
     });
     listenersForButton();
     updateCartTotal();
+    deleteItem();
 }
 
 const listenersForButton = () => {
@@ -50,7 +50,6 @@ const listenersForButton = () => {
             updateQuantity(e, i);
         });
     }
-    ;
     for (let i = 0; i < decreaseButton.length; i++) {
         decreaseButton[i].addEventListener('click', (e) => {
             updateQuantity(e, i);
@@ -68,9 +67,6 @@ const updateQuantity = (e, index) => {
     if (handleButtons === 'remove') {
         let quantity = document.getElementById(`product__quantity-${index}`);
         quantity = products[index].count--;
-        if (products[index].count <= 0) {
-            products.splice(products.indexOf(products[index]), 1);
-        }
     }
     localStorage.setItem('products', JSON.stringify(products));
     tableBody.innerHTML = '';
@@ -82,5 +78,22 @@ function updateCartTotal() {
     let products = JSON.parse(localStorage.getItem('products'));
     total = products.reduce((acc, cur) => acc + cur.price * cur.count, 0);
     let totalValue = document.querySelector('.total__value');
-    totalValue.textContent = `${total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}.000 vnd`
+    totalValue.textContent = `${total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}.000vnd`;
+}
+
+function deleteItem() {
+    let deleteBtn = document.getElementsByClassName('delete--item');
+    for (let i =0; i < deleteBtn.length; i ++) {
+        deleteBtn[i].addEventListener('click', (e) => {
+            if (window.confirm('Bạn có chắc muốn xóa sản phẩm này ?')) {
+                e.target.parentElement.parentElement.parentElement.remove()
+                let itemID = e.target.parentElement.parentElement.parentElement.id;
+                let products = JSON.parse(localStorage.getItem('products'));
+                products.splice(itemID,1)
+                localStorage.setItem('products', JSON.stringify(products));
+                loadCart();
+                location.reload();
+            }
+        })
+    }
 }

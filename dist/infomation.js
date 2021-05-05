@@ -1,3 +1,4 @@
+'use strict'
 let form = document.getElementById("formCheckout");
 let receiver = document.forms["inforForm"]["receiver"];
 let email = document.forms["inforForm"]["email"];
@@ -56,11 +57,7 @@ function checkInputs() {
     }
 
     if (
-        receiverValue === "" ||
-        addressValue === "" ||
-        emailValue === "" ||
-        phoneValue === "" ||
-        testInput === false
+        receiverValue === "" || addressValue === "" || emailValue === "" || phoneValue === "" || testInput === false
     ) {
         return false;
     } else {
@@ -85,7 +82,6 @@ function setErrorForm(input, message) {
 function setSuccessForm(input, message) {
     const formGroup = input.parentElement;
     let errMessage = formGroup.querySelector(".error-message");
-
     errMessage.innerHTML = message;
     formGroup.className = "form-group success";
 }

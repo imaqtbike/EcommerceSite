@@ -32,16 +32,24 @@ body.container
                                 h1 DANH MỤC SẢN PHẨM
                             .cosmetics.border-dotted
                                 h2
-                                | MỸ PHẨM
+                                a(onclick='showProducts(`http://localhost:3000/product`)')(href='#') MỸ PHẨM
                                 i.fas.fa-caret-right
                             .jewelry.border-dotted
                                 .jewelry__title
                                     h2
                                     | TRANG SỨC
                                     i.fas.fa-caret-down
-                                ul
-                                    each val in ['Vòng tay', 'Nhẫn', 'Lắc chân', 'Phụ kiện khác','Giày lười - Giày mọi']
-                                        li= val
+                                ul.product__category
+                                    li.show__chanel
+                                        a(onclick='showProducts(`http://localhost:3000/bracelet`)')(href='#') Vòng tay
+                                    li.show__ring
+                                        a(onclick='showProducts(`http://localhost:3000/ring`)')(href='#') Nhẫn
+                                    li.show__ankle__bracelet
+                                        a(onclick='showProducts(`http://localhost:3000/legbracelet`)')(href='#') Lắc chân
+                                    li.show__other
+                                        a(onclick='showProducts(`http://localhost:3000/other`)')(href='#') Phụ kiện khác
+                                    li.show__shoe
+                                        a(onclick='showProducts(`http://localhost:3000/shoes`)')(href='#') Giày lưới - giày mọi
                             .accessories.border-dotted
                                 h2
                                     | PHỤ KIỆN
@@ -65,6 +73,9 @@ body.container
                         +listPagination
                         .grid__product
                         +listPagination
+.notification__container
+        .notification
+            i.fas.fa-check-circle  Đã thêm một sản phẩm
 footer.footer
     include layouts/footer
 script(src="./grid.js")

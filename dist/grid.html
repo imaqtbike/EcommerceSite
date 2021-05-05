@@ -174,18 +174,18 @@
                 <h1>DANH MỤC SẢN PHẨM</h1>
               </div>
               <div class="cosmetics border-dotted">
-                <h2></h2>MỸ PHẨM<i class="fas fa-caret-right"></i>
+                <h2></h2><a onclick="showProducts(`http://localhost:3000/product`)" href="#">MỸ PHẨM</a><i class="fas fa-caret-right"></i>
               </div>
               <div class="jewelry border-dotted">
                 <div class="jewelry__title">
                   <h2></h2>TRANG SỨC<i class="fas fa-caret-down"></i>
                 </div>
-                <ul>
-                  <li>Vòng tay</li>
-                  <li>Nhẫn</li>
-                  <li>Lắc chân</li>
-                  <li>Phụ kiện khác</li>
-                  <li>Giày lười - Giày mọi</li>
+                <ul class="product__category">
+                  <li class="show__chanel"><a onclick="showProducts(`http://localhost:3000/bracelet`)" href="#">Vòng tay</a></li>
+                  <li class="show__ring"><a onclick="showProducts(`http://localhost:3000/ring`)" href="#">Nhẫn</a></li>
+                  <li class="show__ankle__bracelet"><a onclick="showProducts(`http://localhost:3000/legbracelet`)" href="#">Lắc chân</a></li>
+                  <li class="show__other"><a onclick="showProducts(`http://localhost:3000/other`)" href="#">Phụ kiện khác</a></li>
+                  <li class="show__shoe"><a onclick="showProducts(`http://localhost:3000/shoes`)" href="#">Giày lưới - giày mọi</a></li>
                 </ul>
               </div>
               <div class="accessories border-dotted">
@@ -243,6 +243,9 @@
     </div>
   </section>
 </body>
+<div class="notification__container">
+  <div class="notification"><i class="fas fa-check-circle"> Đã thêm một sản phẩm</i></div>
+</div>
 <footer class="footer">
   <div class="box">
     <div class="footer__content">

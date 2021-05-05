@@ -1,5 +1,5 @@
 {
-  "products": [
+  "product": [
     {
       "id": 1,
       "productName": "OHUI",
@@ -52,6 +52,286 @@
       "price": 335000,
       "oldPrice": "",
       "img": "./assets/images/product7.jpg",
+      "inCart": 1
+    }
+  ],
+  "bracelet": [
+    {
+      "id": 7,
+      "productName": "Plume de CHANEL",
+      "name": "Trang sức Chanel",
+      "price": 134000,
+      "oldPrice": "",
+      "img": "./assets/images/bracelet1.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 8,
+      "productName": "Comète Chevron",
+      "name": "Trang sức Chanel",
+      "price": 490000,
+      "oldPrice": "",
+      "img": "./assets/images/bracelet2.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 9,
+      "productName": "Comète Géode",
+      "name": "Trang sức Chanel",
+      "price": 232000,
+      "oldPrice": "",
+      "img": "./assets/images/bracelet3.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 10,
+      "productName": "Camélia Précieux",
+      "name": "Trang sức Chanel",
+      "price": 995000,
+      "oldPrice": "",
+      "img": "./assets/images/bracelet4.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 11,
+      "productName": "Bouton de Camélia",
+      "name": "Trang sức Chanel",
+      "price": 690000,
+      "oldPrice": "",
+      "img": "./assets/images/bracelet5.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 12,
+      "productName": "Li1on de Soux",
+      "name": "Trang sức Chanel",
+      "price": 500000,
+      "oldPrice": "",
+      "img": "./assets/images/bracelet6.jpg",
+      "inCart": 1
+    }
+  ],
+  "ring": [
+    {
+      "id": 13,
+      "productName": "Nhẫn Vàng 10K đính đá ECZ",
+      "name": "Nhẫn PNJ",
+      "price": 913400,
+      "oldPrice": "",
+      "img": "./assets/images/ring1.png",
+      "inCart": 1
+    },
+    {
+      "id": 14,
+      "productName": "Nhẫn Long Phụng Vàng trắng 14K PNJ",
+      "name": "Nhẫn PNJ",
+      "price": 849000,
+      "oldPrice": "",
+      "img": "./assets/images/ring2.png",
+      "inCart": 1
+    },
+    {
+      "id": 15,
+      "productName": "Nhẫn Vàng trắng Ý 18K PNJ",
+      "name": "Nhẫn PNJ",
+      "price": 923200,
+      "oldPrice": "",
+      "img": "./assets/images/ring3.png",
+      "inCart": 1
+    },
+    {
+      "id": 16,
+      "productName": "Nhẫn bạc PNJSilver",
+      "name": "Nhẫn PNJ",
+      "price": 649500,
+      "oldPrice": "",
+      "img": "./assets/images/ring4.png",
+      "inCart": 1
+    },
+    {
+      "id": 17,
+      "productName": "Nhẫn Vàng 24k PNJGold",
+      "name": "Nhẫn PNJ",
+      "price": 769000,
+      "oldPrice": "",
+      "img": "./assets/images/ring5.png",
+      "inCart": 1
+    },
+    {
+      "id": 18,
+      "productName": "Nhẫn vàng 16k EZY",
+      "name": "Nhẫn PNJ",
+      "price": 650000,
+      "oldPrice": "",
+      "img": "./assets/images/ring6.png",
+      "inCart": 1
+    }
+  ],
+  "legbracelet": [
+    {
+      "id": 19,
+      "productName": "Ankle Bracelet Family",
+      "name": "Lắc chân",
+      "price": 113400,
+      "oldPrice": "",
+      "img": "./assets/images/leg1.png",
+      "inCart": 1
+    },
+    {
+      "id": 20,
+      "productName": "Crystal Fashion Ankle Bracelet",
+      "name": "Lắc chân",
+      "price": 149000,
+      "oldPrice": "",
+      "img": "./assets/images/leg2.png",
+      "inCart": 1
+    },
+    {
+      "id": 21,
+      "productName": "Nhẫn Vàng trắng Ý 18K PNJ",
+      "name": "Lắc chân",
+      "price": 223200,
+      "oldPrice": "",
+      "img": "./assets/images/leg3.png",
+      "inCart": 1
+    },
+    {
+      "id": 22,
+      "productName": "Bracelet with letter B",
+      "name": "Lắc chân",
+      "price": 149500,
+      "oldPrice": "",
+      "img": "./assets/images/leg4.png",
+      "inCart": 1
+    },
+    {
+      "id": 23,
+      "productName": "Crystal Bead Bracelet",
+      "name": "Lắc chân",
+      "price": 269000,
+      "oldPrice": "",
+      "img": "./assets/images/leg5.png",
+      "inCart": 1
+    },
+    {
+      "id": 24,
+      "productName": "Heart Ankle bracelet",
+      "name": "Lắc chân",
+      "price": 450000,
+      "oldPrice": "",
+      "img": "./assets/images/leg6.png",
+      "inCart": 1
+    }
+  ],
+  "other": [
+    {
+      "id": 25,
+      "productName": "Chanel Contours",
+      "name": "Sản phẩm khác",
+      "price": 113400,
+      "oldPrice": "",
+      "img": "./assets/images/other1.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 26,
+      "productName": "Creme Riche",
+      "name": "Sản phẩm khác",
+      "price": 349000,
+      "oldPrice": "",
+      "img": "./assets/images/other2.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 27,
+      "productName": "N5",
+      "name": "Sản phẩm khác",
+      "price": 223200,
+      "oldPrice": "",
+      "img": "./assets/images/other3.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 28,
+      "productName": "Allure",
+      "name": "Sản phẩm khác",
+      "price": 149500,
+      "oldPrice": "",
+      "img": "./assets/images/other4.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 29,
+      "productName": "Le Vernis Chanel",
+      "name": "Sản phẩm khác",
+      "price": 269000,
+      "oldPrice": "",
+      "img": "./assets/images/other5.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 30,
+      "productName": "Rouge de Coco",
+      "name": "Sản phẩm khác",
+      "price": 450000,
+      "oldPrice": "",
+      "img": "./assets/images/other6.jpg",
+      "inCart": 1
+    }
+  ],
+  "shoes": [
+    {
+      "id": 31,
+      "productName": "Chanel Slipon",
+      "name": "Giày",
+      "price": 113400,
+      "oldPrice": "",
+      "img": "./assets/images/shoe1.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 32,
+      "productName": "Creme Raladera",
+      "name": "Giày",
+      "price": 149000,
+      "oldPrice": "",
+      "img": "./assets/images/shoe2.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 33,
+      "productName": "Grabielle Chanel",
+      "name": "Giày",
+      "price": 223200,
+      "oldPrice": "",
+      "img": "./assets/images/shoe3.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 34,
+      "productName": "De Coco",
+      "name": "Giày",
+      "price": 149500,
+      "oldPrice": "",
+      "img": "./assets/images/shoe4.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 35,
+      "productName": "Le Vernis",
+      "name": "Giày",
+      "price": 269000,
+      "oldPrice": "",
+      "img": "./assets/images/shoe5.jpg",
+      "inCart": 1
+    },
+    {
+      "id": 36,
+      "productName": "Alure de Coco",
+      "name": "Giày",
+      "price": 450000,
+      "oldPrice": "",
+      "img": "./assets/images/shoe6.jpg",
       "inCart": 1
     }
   ]
