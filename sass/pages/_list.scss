@@ -211,6 +211,7 @@ article {
       }
     }
       &__number {
+        display: flex;
         .fa-caret-left {
           margin-right: 0.5rem;
         }
@@ -221,9 +222,6 @@ article {
           margin: 0 0.5rem;
           font-family: "Roboto",sans-serif;
           cursor: pointer;
-        }
-        span:nth-last-child(-n+3) {
-          color: $color-very-light-gray
         }
       }
   }
@@ -302,4 +300,14 @@ article {
 
 article .list__item:not(:last-child) img {
   @include borderBottomDotted
+}
+
+.page {
+  color: $color-very-light-gray;
+}
+.disable__page {
+  color: $color-very-light-gray;
+}
+.active {
+  color: $color-black;
 }

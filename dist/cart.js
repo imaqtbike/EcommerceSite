@@ -21,7 +21,7 @@ function loadCart() {
     products.forEach((product, index) => {
         let cartItem = document.createElement('tr');
         cartItem.className = 'cart-item';
-        cartItem.id = `${index}`
+        cartItem.id = `${index}`;
         cartItem.innerHTML = `<td><img src="${product.imgSrc}" alt='product image'></td>
                   <td>${product.name}</td>
                   <td><span class='cart-price'>${product.price}.000<small>vnd</small></span></td>
@@ -67,6 +67,11 @@ const updateQuantity = (e, index) => {
     if (handleButtons === 'remove') {
         let quantity = document.getElementById(`product__quantity-${index}`);
         quantity = products[index].count--;
+        if (products[index].count < 1) {
+            if (window.confirm('Bạn có chắc muốn xóa sản phẩm này ?')) {
+                products.splice(products.indexOf(products[index]), 1);
+            }
+        }
     }
     localStorage.setItem('products', JSON.stringify(products));
     tableBody.innerHTML = '';
@@ -83,17 +88,21 @@ function updateCartTotal() {
 
 function deleteItem() {
     let deleteBtn = document.getElementsByClassName('delete--item');
-    for (let i =0; i < deleteBtn.length; i ++) {
+    for (let i = 0; i < deleteBtn.length; i++) {
         deleteBtn[i].addEventListener('click', (e) => {
-            if (window.confirm('Bạn có chắc muốn xóa sản phẩm này ?')) {
-                e.target.parentElement.parentElement.parentElement.remove()
-                let itemID = e.target.parentElement.parentElement.parentElement.id;
-                let products = JSON.parse(localStorage.getItem('products'));
-                products.splice(itemID,1)
-                localStorage.setItem('products', JSON.stringify(products));
-                loadCart();
-                location.reload();
-            }
-        })
+            removeItemFromLocal(e);
+            loadCart();
+            location.reload();
+        });
+    }
+}
+
+function removeItemFromLocal(e) {
+    if (window.confirm('Bạn có chắc muốn xóa sản phẩm này ?')) {
+        e.target.parentElement.parentElement.parentElement.remove();
+        let itemID = e.target.parentElement.parentElement.parentElement.id;
+        let products = JSON.parse(localStorage.getItem('products'));
+        products.splice(itemID, 1);
+        localStorage.setItem('products', JSON.stringify(products));
     }
 }

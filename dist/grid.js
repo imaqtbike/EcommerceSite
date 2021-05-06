@@ -1,12 +1,16 @@
 "use strict";
 const productGrid = document.querySelector('.grid__product');
 let productCart = document.querySelector('.cart__content');
+let page2 = document.querySelector('.page__2');
+let page1 = document.querySelector('.page__1');
+let page3 = document.querySelector('.page__3');
 let products = [];
 eventListeners();
 
 //all event listeners
 function eventListeners() {
     window.addEventListener('DOMContentLoaded', () => {
+        showProducts(`http://localhost:3000/product`);
         loadCart();
     });
     productGrid.addEventListener('click', purchaseProduct);
@@ -64,8 +68,8 @@ function pushItemInArray(item) {
         notification.classList.add('success');
         localStorage.setItem('products', JSON.stringify(products));
         setTimeout(function () {
-            notification.classList.remove('success')
-        }, 2000)
+            notification.classList.remove('success');
+        }, 2000);
         return;
     }
     for (let i = 0; i <= products.length; i++) {
@@ -73,18 +77,27 @@ function pushItemInArray(item) {
             products[i].count++;
             notification.classList.add('success');
             setTimeout(function () {
-                notification.classList.remove('success')
-            }, 2000)
+                notification.classList.remove('success');
+            }, 2000);
             return;
         } else if (i === products.length - 1) {
             products.push(item);
             notification.classList.add('success');
             localStorage.setItem('products', JSON.stringify(products));
             setTimeout(function () {
-                notification.classList.remove('success')
-            }, 3000)
+                notification.classList.remove('success');
+            }, 2000);
             return;
         }
     }
     products.push(item);
+}
+
+function changePage(a,b,c,link) {
+    if (a.classList.contains('active') || b.classList.contains('active')) {
+        a.classList.remove('active')
+        b.classList.remove('active')
+        c.classList.add('active')
+    }
+    showProducts(link);
 }

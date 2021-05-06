@@ -30,12 +30,13 @@ mixin listPagination
                 .pagination__list__horizontal
                     a(href='./grid.html')
                         i.fas.fa-th-large
-                .pagination__list__vertical
+                .pagination__list__vertical                                                                      
                     a(href='./list.html')
                         i.fas.fa-list
             .pagination__number
                 i.fas.fa-caret-left
-                span.active 1
-                span 2
-                span 3
+                .pagination__pages
+                    span.page.page__1.active(onclick='changePage(page2,page3,page1, `http://localhost:3000/product`)') 1
+                    span.page.page__2(onclick='changePage(page1, page3,page2, `http://localhost:3000/other`)') 2
+                    span.page.page__3(onclick='changePage(page1,page2,page3, `http://localhost:3000/ring`)') 3
                 i.fas.fa-caret-right

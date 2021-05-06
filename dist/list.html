@@ -223,9 +223,11 @@
             <div class="pagination">
               <div class="pagination__list">
                 <div class="pagination__list__horizontal"><a href="./grid.html"><i class="fas fa-th-large"></i></a></div>
-                <div class="pagination__list__vertical"><a href="./list.html"><i class="fas fa-list"></i></a></div>
+                <div class="pagination__list__vertical">                                                                     <a href="./list.html"><i class="fas fa-list"></i></a></div>
               </div>
-              <div class="pagination__number"><i class="fas fa-caret-left"></i><span class="active">1</span><span>2</span><span>3</span><i class="fas fa-caret-right"></i></div>
+              <div class="pagination__number"><i class="fas fa-caret-left"></i>
+                <div class="pagination__pages"><span class="page page__1 active" onclick="changePage(page2,page3,page1, `http://localhost:3000/product`)">1</span><span class="page page__2" onclick="changePage(page1, page3,page2, `http://localhost:3000/other`)">2</span><span class="page page__3" onclick="changePage(page1,page2,page3, `http://localhost:3000/ring`)">3</span></div><i class="fas fa-caret-right"></i>
+              </div>
             </div>
           </div>
           <div class="list__content__product">
@@ -279,15 +281,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="list__content__pagination">
-            <div class="pagination">
-              <div class="pagination__list">
-                <div class="pagination__list__horizontal"><a href="./grid.html"><i class="fas fa-th-large"></i></a></div>
-                <div class="pagination__list__vertical"><a href="./list.html"><i class="fas fa-list"></i></a></div>
-              </div>
-              <div class="pagination__number"><i class="fas fa-caret-left"></i><span class="active">1</span><span>2</span><span>3</span><i class="fas fa-caret-right"></i></div>
             </div>
           </div>
         </div>
