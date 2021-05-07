@@ -93,6 +93,7 @@ function pushItemInArray(item) {
     products.push(item);
 }
 
+//change page when click
 function changePage(a,b,c,link) {
     if (a.classList.contains('active') || b.classList.contains('active')) {
         a.classList.remove('active')
